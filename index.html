@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ISSN+</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <link href="app.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="columns is-mobile is-fullheight is-marginless">
+    <div id="container-aside" class="column is-1 is-fullheight is-paddingless is-marginless is-hidden-mobile">
+      <aside id="menu" class="is-fullheight">
+        <div id="top-menu" class="has-text-centered">
+          <a href="/" class="is-paddingless router-link-exact-active router-link-active"><img src="logo.png" alt="logo"
+              class="image"></a>
+          <a href="/search-table.html" class="is-paddingless"><span data-label="Search for bibliographic records"
+              class="is-info is-right is-medium b-tooltip" style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-magnify-plus-outline mdi-48px"></i></span></span></a><a href="/"
+            class="is-paddingless"><span data-label="create a new record block"
+              class="is-info is-right is-medium b-tooltip" style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-file-document-box mdi-48px"></i></span></span></a><a href="/"
+            class="is-paddingless"><span data-label="import a marc21 file " class="is-info is-right is-medium b-tooltip"
+              style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-upload mdi-48px"></i></span></span></a></div>
+        <div id="bottom-menu" class="has-text-centered"><a href="/" class="is-paddingless"><span
+              data-label="elasticsearch" class="is-info is-right is-medium b-tooltip"
+              style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-database-plus mdi-48px"></i></span></span></a><a
+            href="/" class="router-link is-paddingless"><span
+              data-label="admin page" class="is-info is-right is-medium b-tooltip" style="transition-delay: 0ms;"><span
+                class="icon is-large"><i class="mdi mdi-settings mdi-48px"></i></span></span></a><a href="/"
+            class="is-paddingless"><span data-label="logout" class="is-info is-right is-medium b-tooltip"
+              style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-logout-letiant mdi-48px"></i></span></span></a>
+        </div>
+      </aside>
+    </div>
+    <div id="app" class="container column is-fluid">
+      <section class="info-tiles">
+        <div class="tile is-ancestor has-text-centered">
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <p class="title">439k</p>
+              <p class="subtitle">Records</p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <p class="title">59</p>
+              <p class="subtitle">User</p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <p class="title">3.4k</p>
+              <p class="subtitle">Draft Records</p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <p class="title">19</p>
+              <p class="subtitle">Exceptions</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <div class="columns">
+        <div class="column is-6">
+          <div class="card events-card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Events
+              </p>
+              <a href="#" class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </a>
+            </header>
+            <div class="card-table">
+              <div class="content">
+                <table class="table is-fullwidth is-striped">
+                  <tbody>
+                    <tr>
+                      <td width="5%"><i class="fa fa-bell-o"></i></td>
+                      <td>Lorum ipsum dolem aire</td>
+                      <td class="level-right"><a class="button is-small is-info" href="#">Action</a></td>
+                    </tr>
+                    <tr>
+                      <td width="5%"><i class="fa fa-bell-o"></i></td>
+                      <td>Lorum ipsum dolem aire</td>
+                      <td class="level-right"><a class="button is-small is-info" href="#">Action</a></td>
+                    </tr>
+                    <tr>
+                      <td width="5%"><i class="fa fa-bell-o"></i></td>
+                      <td>Lorum ipsum dolem aire</td>
+                      <td class="level-right"><a class="button is-small is-info" href="#">Action</a></td>
+                    </tr>
+                    <tr>
+                      <td width="5%"><i class="fa fa-bell-o"></i></td>
+                      <td>Lorum ipsum dolem aire</td>
+                      <td class="level-right"><a class="button is-small is-info" href="#">Action</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">View All</a>
+            </footer>
+          </div>
+          <div class="card">
+            <div id="barplot"></div>
+          </div>
+        </div>
+        <div class="column is-6">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Notice Search
+              </p>
+              <a href="#" class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </a>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-large" type="text" placeholder="">
+                  <span class="icon is-medium is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <span class="icon is-medium is-right">
+                    <i class="fa fa-check"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div id="donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    {
+      // set the dimensions and margins of the graph
+      let width = 450
+      let height = 450
+      let margin = 30
+
+      // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+      let radius = Math.min(width, height) / 2 - margin
+
+      // append the svg object to the div called 'my_dataviz'
+      let svg = d3.select("#donut")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+      // Create dummy data
+      let data = { a: 9, b: 20, c: 30, d: 8, e: 12, f: 3, g: 7, h: 14 }
+
+      // set the color scale
+      let color = d3.scaleOrdinal()
+        .domain(["a", "b", "c", "d", "e", "f", "g", "h"])
+        .range(d3.schemeDark2);
+
+      // Compute the position of each group on the pie:
+      let pie = d3.pie()
+        .sort(null) // Do not sort group by size
+        .value(function (d) { return d.value; })
+      let data_ready = pie(d3.entries(data))
+
+      // The arc generator
+      let arc = d3.arc()
+        .innerRadius(radius * 0.5)         // This is the size of the donut hole
+        .outerRadius(radius * 0.8)
+
+      // Another arc that won't be drawn. Just for labels positioning
+      let outerArc = d3.arc()
+        .innerRadius(radius * 0.9)
+        .outerRadius(radius * 0.9)
+
+      // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+      svg
+        .selectAll('allSlices')
+        .data(data_ready)
+        .enter()
+        .append('path')
+        .attr('d', arc)
+        .attr('fill', function (d) { return (color(d.data.key)) })
+        .attr("stroke", "white")
+        .style("stroke-width", "2px")
+        .style("opacity", 0.7)
+
+      // Add the polylines between chart and labels:
+      svg
+        .selectAll('allPolylines')
+        .data(data_ready)
+        .enter()
+        .append('polyline')
+        .attr("stroke", "black")
+        .style("fill", "none")
+        .attr("stroke-width", 1)
+        .attr('points', function (d) {
+          let posA = arc.centroid(d) // line insertion in the slice
+          let posB = outerArc.centroid(d) // line break: we use the other arc generator that has been built only for that
+          let posC = outerArc.centroid(d); // Label position = almost the same as posB
+          let midangle = d.startAngle + (d.endAngle - d.startAngle) / 2 // we need the angle to see if the X position will be at the extreme right or extreme left
+          posC[0] = radius * 0.95 * (midangle < Math.PI ? 1 : -1); // multiply by 1 or -1 to put it on the right or on the left
+          return [posA, posB, posC]
+        })
+
+      // Add the polylines between chart and labels:
+      svg
+        .selectAll('allLabels')
+        .data(data_ready)
+        .enter()
+        .append('text')
+        .text(function (d) { console.log(d.data.key); return d.data.key })
+        .attr('transform', function (d) {
+          let pos = outerArc.centroid(d);
+          let midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
+          pos[0] = radius * 0.99 * (midangle < Math.PI ? 1 : -1);
+          return 'translate(' + pos + ')';
+        })
+        .style('text-anchor', function (d) {
+          let midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
+          return (midangle < Math.PI ? 'start' : 'end')
+        })
+    }
+
+    {
+      // set the dimensions and margins of the graph
+      let margin = { top: 30, right: 30, bottom: 70, left: 60 },
+        width = 700 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
+
+      // append the svg object to the body of the page
+      let svg = d3.select("#barplot")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+      // Parse the Data
+      d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/7_OneCatOneNum_header.csv", function (data) {
+
+        // X axis
+        let x = d3.scaleBand()
+          .range([0, width])
+          .domain(data.map(function (d) { return d.Country; }))
+          .padding(0.2);
+        svg.append("g")
+          .attr("transform", "translate(0," + height + ")")
+          .call(d3.axisBottom(x))
+          .selectAll("text")
+          .attr("transform", "translate(-10,0)rotate(-45)")
+          .style("text-anchor", "end");
+
+        // Add Y axis
+        let y = d3.scaleLinear()
+          .domain([0, 13000])
+          .range([height, 0]);
+        svg.append("g")
+          .call(d3.axisLeft(y));
+
+        // Bars
+        svg.selectAll("mybar")
+          .data(data)
+          .enter()
+          .append("rect")
+          .attr("x", function (d) { return x(d.Country); })
+          .attr("y", function (d) { return y(d.Value); })
+          .attr("width", x.bandwidth())
+          .attr("height", function (d) { return height - y(d.Value); })
+          .attr("fill", "#209cee")
+      })
+    }
+
+  </script>
+</body>
+
+</html>

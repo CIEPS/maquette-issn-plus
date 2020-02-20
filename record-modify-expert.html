@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ISSN+</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <link href="app.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="columns is-mobile is-fullheight is-marginless">
+    <div id="container-aside" class="column is-1 is-fullheight is-paddingless is-marginless is-hidden-mobile">
+      <aside id="menu" class="is-fullheight">
+        <div id="top-menu" class="has-text-centered">
+          <a href="/" class="is-paddingless router-link-exact-active router-link-active"><img src="logo.png" alt="logo"
+              class="image"></a>
+          <a href="/search-table.html" class="is-paddingless"><span data-label="Search for bibliographic records"
+              class="is-info is-right is-medium b-tooltip" style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-magnify-plus-outline mdi-48px"></i></span></span></a><a href="/" class="is-paddingless"><span
+              data-label="create a new record block" class="is-info is-right is-medium b-tooltip"
+              style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-file-document-box mdi-48px"></i></span></span></a><a href="/" class="is-paddingless"><span
+              data-label="import a marc21 file " class="is-info is-right is-medium b-tooltip"
+              style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-upload mdi-48px"></i></span></span></a></div>
+        <div id="bottom-menu" class="has-text-centered"><a href="/" class="is-paddingless"><span data-label="elasticsearch"
+              class="is-info is-right is-medium b-tooltip" style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-database-plus mdi-48px"></i></span></span></a><a href="/"
+            class="router-link is-paddingless"><span data-label="admin page" class="is-info is-right is-medium b-tooltip"
+              style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-settings mdi-48px"></i></span></span></a><a href="/" class="is-paddingless"><span
+              data-label="logout" class="is-info is-right is-medium b-tooltip" style="transition-delay: 0ms;"><span
+                class="icon is-large"><i class="mdi mdi-logout-letiant mdi-48px"></i></span></span></a>
+        </div>
+      </aside>
+    </div>
+    <div id="app" class="container column is-fluid">
+      <div class="card">
+        <div class="card-content">
+          <p class="title">
+            Mauris vehicula diam non tellus.
+          </p>
+          <p class="subtitle">
+            1234-6065
+          </p>
+          <div class="tabs">
+            <ul>
+              <li><a href="/record-modify-basic.html">Basic Mode</a></li>
+              <li class="is-active"><a href="/record-modify-expert.html">Expert Mode</a></li>
+            </ul>
+          </div>
+          <div class="level">
+            <div class="level-left">
+              <div class="level-item">
+                <div class="field">
+                  <label class="label">Category</label>
+                  <div class="control">
+                    <div class="select">
+                      <select>
+                        <option>Register</option>
+                        <option>Free</option>
+                        <option>Work</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="level-item">
+                <div class="field">
+                  <label class="label">Medium</label>
+                  <div class="control">
+                    <div class="select">
+                      <select>
+                        <option>Print</option>
+                        <option>Online</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="level-item">
+                <div class="field">
+                  <label class="label">Center code</label>
+                  <div class="control">
+                    <div class="select">
+                      <select>
+                        <option>OP</option>
+                        <option>Egypt</option>
+                        <option>Chile</option>
+                        <option>Uruguay</option>
+                        <option>Ghana</option>
+                        <option>Tanzania, United Republic of</option>
+                        <option>Portugal</option>
+                        <option>Gambi</option>
+                        <option>India</option>
+                        <option>Columbia</option>
+                        <option>China</option>
+                        <option>Greece</option>
+                        <option>Venezuela</option>
+                        <option>Algeria</option>
+                        <option>Romania</option>
+                        <option>Korea - Republic of</option>
+                        <option>Turkey</option>
+                        <option>Jamaica</option>
+                        <option>Croatia</option>
+                        <option>Slovenia</option>
+                        <option>Saudi Arabia</option>
+                        <option>Czech Republic</option>
+                        <option>Slovak Republic</option>
+                        <option>Ecuador</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="level-item">
+                <div class="field">
+                  <label class="label">Country code</label>
+                  <div class="control">
+                    <div class="select">
+                      <select>
+                        <option>ABW Aruba</option>
+                        <option>AFG Afghanistan</option>
+                        <option>AGO Angola</option>
+                        <option>AIA Anguilla</option>
+                        <option>ALA Åland Islands</option>
+                        <option>ALB Albania</option>
+                        <option>AND Andorra</option>
+                        <option>ANT Netherlands Antilles</option>
+                        <option>ARE United Arab Emirates</option>
+                        <option>ARG Argentina</option>
+                        <option>ARM Armenia</option>
+                        <option>ASM American Samoa</option>
+                        <option>ATA Antarctica</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Leader</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="5 lines of textarea" rows="5">
+=LDR 02105cas a2200541 a 4500
+=001 0028-0836
+=003 ISSN
+=005 20190817162300.0
+=007 ta
+=008 190816c18699999enkwr|p\\\\\\\0\\\a0eng\\
+              </textarea>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Fields</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="16 lines of textarea" rows="12">
+=022 0\ $a 0028-0836 $z 0302-2889 $2 _2 $l 0028-0836
+=030 \\ $a NATUAS
+=035 \\ $a (ISSN)00280836
+=039 \9 $a 201908171623 $b VLOAD $c 201908171559 $d VLOAD $c 201908161254 $d ICBIB $c 201905041728 $d VLOAD $y
+200406091632 $z load $w GBR_20190816.mrc $x 3
+=044 \\ $c GBR
+=082 04 $a 505 $2 21
+=210 1\ $a Nature $b (Lond.)
+=222 \\ $a Nature $b (London)
+=245 1\ $a Nature.
+=260 \\ $a London $b Macmillan $c 1869-
+=264 31 $a London $b Springer Nature Limited
+=336 \\ $a text $2 rdacontent
+=337 \\ $a unmediated $2 rdamedia
+=338 \\ $a volume $2 rdacarrier
+=510 \\ $a CABABSTRACTS $9 facet
+=510 \\ $a CROSSREF $9 facet
+=510 \\ $a GLOBALHEALTH $9 facet
+=510 \\ $a MEDLINE $9 facet
+=510 \\ $a PSYCHINFO $9 facet
+=510 \\ $a SCOPUS $9 facet
+=510 \\ $a THE KEEPERS $9 facet
+=699 \9 $a BOW $v BO $x [0000-001 $y 0089-999] $z 19730101 $8 Register
+=770 0\ $t Nature. Directory of biologicals $x 0266-6561
+=770 0\ $t Nurture (London) $x 1746-4366
+=776 08 $t Nature (Basingstoke. Online) $x 1476-4687 $h cr
+=780 15 $t Nature. New biology (London) $x 0090-0028
+=780 15 $t Nature. Physical science (London) $x 0300-8746
+=787 0\ $t Nature collections
+=787 0\ $t Nature structural biology $x 1072-8368
+=787 0\ $t Nature biotechnology (Print) $x 1087-0156
+=926 \\ $a London : $n London $c United Kingdom $l 51.50853 $o -0.12574 $u http://sws.geonames.org/2643743/
+=926 31 $a London : $n London $c United Kingdom $l 51.50853 $o -0.12574 $u http://sws.geonames.org/2643743/
+=950 \\ $a SNIP 2017 $b Journal
+=962 \\ $a London : $n London $c United Kingdom $l 51.50853 $o -0.12574 $u http://sws.geonames.org/2643743/
+=962 31 $a London : $n London $c United Kingdom $l 51.50853 $o -0.12574 $u http://sws.geonames.org/2643743/
+=966 \\ $a TITLE DOI $b http://doi.org/10.1038/41586.1476-4687
+=981 01 $a MATHEMATICS. NATURAL SCIENCES $u http://udcdata.info/025403 $c 5
+=997 \\ $a 0028-0836 $b 17 $c 0028-0836 $d 2 $e 1 cr1 ta1
+              </textarea>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button class="button is-danger">
+              <span class="icon is-small">
+                <i class="fas fa-times"></i>
+              </span>
+              <span>Cancel</span>
+            </button>
+            <button class="button is-success">
+              <span class="icon is-small">
+                <i class="fas fa-check"></i>
+              </span>
+              <span>Save</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

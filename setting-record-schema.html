@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ISSN+</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css">
+  <link href="app.css" rel="stylesheet">
+  <link href="jsoneditor.min.css" rel="stylesheet" type="text/css">
+  <script src="jsoneditor.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+  <div class="columns is-mobile is-fullheight is-marginless">
+    <div id="container-aside" class="column is-1 is-fullheight is-paddingless is-marginless is-hidden-mobile">
+      <aside id="menu" class="is-fullheight">
+        <div id="top-menu" class="has-text-centered">
+          <a href="#/" class="is-paddingless router-link-exact-active router-link-active"><img src="logo.png" alt="logo"
+              class="image"></a>
+          <a href="#/search" class="is-paddingless"><span data-label="Search for bibliographic records"
+              class="is-primary is-right is-medium b-tooltip" style="transition-delay: 0ms;"><span
+                class="icon is-large"><i class="mdi mdi-magnify-plus-outline mdi-48px"></i></span></span></a><a
+            href="#/newblock" class="is-paddingless"><span data-label="create a new record block"
+              class="is-primary is-right is-medium b-tooltip" style="transition-delay: 0ms;"><span
+                class="icon is-large"><i class="mdi mdi-file-document-box mdi-48px"></i></span></span></a><a
+            href="#/marcfileimport" class="is-paddingless"><span data-label="import a marc21 file "
+              class="is-primary is-right is-medium b-tooltip" style="transition-delay: 0ms;"><span
+                class="icon is-large"><i class="mdi mdi-upload mdi-48px"></i></span></span></a></div>
+        <div id="bottom-menu" class="has-text-centered"><a href="#/elasticsearch" class="is-paddingless"><span
+              data-label="elasticsearch" class="is-primary is-right is-medium b-tooltip"
+              style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-database-plus mdi-48px"></i></span></span></a><a
+            href="https://issn-plus-staging.anybox.cloud/admin" class="router-link is-paddingless"><span
+              data-label="admin page" class="is-primary is-right is-medium b-tooltip"
+              style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-settings mdi-48px"></i></span></span></a><a href="#/#" class="is-paddingless"><span
+              data-label="logout" class="is-primary is-right is-medium b-tooltip" style="transition-delay: 0ms;"><span
+                class="icon is-large"><i class="mdi mdi-logout-variant mdi-48px"></i></span></span></a>
+        </div>
+      </aside>
+    </div>
+    <div id="app" class="container column is-fluid">
+      <div class="box">
+        <h1 class="title">Configuration of the record schema</h1>
+        <hr>
+        <div class="field">
+          <label class="label">Category</label>
+          <div class="control">
+            <div class="select">
+              <select>
+                <option>Register</option>
+                <option>Free</option>
+                <option>Work</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div id="jsoneditor"></div>
+        <hr>
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-danger">
+              <span class="icon is-small">
+                <i class="fas fa-times"></i>
+              </span>
+              <span>Cancel</span>
+            </button>
+          </div>
+          <div class="control">
+            <button class="button is-success">
+              <span class="icon is-small">
+                <i class="fas fa-check"></i>
+              </span>
+              <span>Save</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script>
+    // create the editor
+    const container = document.getElementById("jsoneditor")
+    const options = {}
+    const editor = new JSONEditor(container, options)
+
+    // set json
+    const initialJson = {
+      "fields": {
+        "210": {
+          "indicator1": {
+            "codes": {
+              "0": {
+                "label": "No added entry"
+              },
+              "1": {
+                "label": "Added entry"
+              }
+            },
+            "label": "Title added entry"
+          },
+          "indicator2": {
+            "codes": {
+              " ": {
+                "label": "Abbreviated key title"
+              },
+              "0": {
+                "label": "Other abbreviated title"
+              }
+            },
+            "label": "Type"
+          },
+          "label": "Abbreviated Title",
+          "repeatable": true,
+          "subfields": {
+            "a": {
+              "label": "Abbreviated title",
+              "repeatable": false,
+              "required": true,
+              "pattern": "^[a-zA-Z0-9_]*"
+            },
+            "b": {
+              "label": "Qualifying information",
+              "repeatable": false
+            }
+          },
+          "tag": "210",
+          "url": "https://www.loc.gov/marc/bibliographic/bd210.html"
+        },
+        "260": {
+          "historical-subfields": {
+            "d": {
+              "label": "Plate or publisher's number for music (Pre-AACR2) [OBSOLETE, 1981] [CAN/MARC only] / Plate or publisher's number for music (Pre-AACR2) [OBSOLETE, 1999] [USMARC only]"
+            },
+            "k": {
+              "label": "Identification/manufacturer number [OBSOLETE, 1988] [CAN/MARC only]"
+            },
+            "l": {
+              "label": "Matrix and/or take number [OBSOLETE, 1988] [CAN/MARC only]"
+            }
+          },
+          "indicator1": {
+            "codes": {
+              " ": {
+                "label": "Not applicable/No information provided/Earliest available publisher"
+              },
+              "2": {
+                "label": "Intervening publisher"
+              },
+              "3": {
+                "label": "Current/latest publisher"
+              }
+            },
+            "historical-codes": {
+              "0": {
+                "label": "Publisher, distributor, etc. is present"
+              },
+              "1": {
+                "label": "Publisher, distributor, etc. not present"
+              }
+            },
+            "label": "Sequence of publishing statements"
+          },
+          "indicator2": null,
+          "label": "Publication, Distribution, etc. (Imprint)",
+          "repeatable": true,
+          "subfields": {
+            "3": {
+              "label": "Materials specified",
+              "repeatable": false
+            },
+            "6": {
+              "label": "Linkage",
+              "repeatable": false
+            },
+            "8": {
+              "label": "Field link and sequence number",
+              "repeatable": true
+            },
+            "a": {
+              "label": "Place of publication, distribution, etc.",
+              "repeatable": true
+            },
+            "b": {
+              "label": "Name of publisher, distributor, etc.",
+              "repeatable": true
+            },
+            "c": {
+              "label": "Date of publication, distribution, etc.",
+              "repeatable": true
+            },
+            "e": {
+              "label": "Place of manufacture",
+              "repeatable": true
+            },
+            "f": {
+              "label": "Manufacturer",
+              "repeatable": true
+            },
+            "g": {
+              "label": "Date of manufacture",
+              "repeatable": true
+            }
+          },
+          "tag": "260",
+          "url": "https://www.loc.gov/marc/bibliographic/bd260.html"
+        }
+      }
+    }
+    editor.set(initialJson)
+
+    // get json
+    const updatedJson = editor.get()
+  </script>
+</body>
+
+</html>

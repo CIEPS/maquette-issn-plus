@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ISSN+</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <link href="app.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="columns is-mobile is-fullheight is-marginless">
+    <div id="container-aside" class="column is-1 is-fullheight is-paddingless is-marginless is-hidden-mobile">
+      <aside id="menu" class="is-fullheight">
+        <div id="top-menu" class="has-text-centered">
+          <a href="/" class="is-paddingless router-link-exact-active router-link-active"><img src="logo.png" alt="logo"
+              class="image"></a>
+          <a href="/search-table.html" class="is-paddingless"><span data-label="Search for bibliographic records"
+              class="is-info is-right is-medium b-tooltip" style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-magnify-plus-outline mdi-48px"></i></span></span></a><a href="/" class="is-paddingless"><span
+              data-label="create a new record block" class="is-info is-right is-medium b-tooltip"
+              style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-file-document-box mdi-48px"></i></span></span></a><a href="/" class="is-paddingless"><span
+              data-label="import a marc21 file " class="is-info is-right is-medium b-tooltip"
+              style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-upload mdi-48px"></i></span></span></a></div>
+        <div id="bottom-menu" class="has-text-centered"><a href="/" class="is-paddingless"><span data-label="elasticsearch"
+              class="is-info is-right is-medium b-tooltip" style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-database-plus mdi-48px"></i></span></span></a><a href="/"
+            class="router-link is-paddingless"><span data-label="admin page" class="is-info is-right is-medium b-tooltip"
+              style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-settings mdi-48px"></i></span></span></a><a href="/" class="is-paddingless"><span
+              data-label="logout" class="is-info is-right is-medium b-tooltip" style="transition-delay: 0ms;"><span
+                class="icon is-large"><i class="mdi mdi-logout-letiant mdi-48px"></i></span></span></a>
+        </div>
+      </aside>
+    </div>
+    <div id="app" class="container column is-fluid">
+      <div class="field">
+        <p class="control has-icons-left">
+          <input class="input" type="password" placeholder="Type some keyword or a query lucene">
+          <span class="icon is-small is-left">
+            <i class="fas fa-search"></i>
+          </span>
+        </p>
+      </div>
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link is-light">Reset</button>
+        </div>
+        <div class="control">
+          <button class="button is-link">Submit</button>
+        </div>
+      </div>
+      <hr>
+      <div class="field">
+        <div class="control">
+          <a class="button is-primary" href="/record-modify-basic.html">
+            <span class="icon is-small">
+              <i class="fas fa-edit"></i>
+            </span>
+            <span>Edit record(s) selected</span>
+          </a>
+        </div>
+      </div>
+      <table class="table is-striped is-hoverable">
+        <thead>
+          <tr>
+            <th></th>
+            <th>n°</th>
+            <th>issn</th>
+            <th>issnl</th>
+            <th>cat</th>
+            <th>med</th>
+            <th>freq</th>
+            <th>co</th>
+            <th>cent</th>
+            <th>lang</th>
+            <th>start</th>
+            <th>end</th>
+            <th>title</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                  </label>
+                </div>
+              </div>
+            </th>
+            <td>1</td>
+            <td>1234-8714</td>
+            <td>1234-8714</td>
+            <td>wor</td>
+            <td>ta</td>
+            <td>m</td>
+            <td>HKG</td>
+            <td>_0</td>
+            <td>eng</td>
+            <td>2020</td>
+            <td>9999</td>
+            <td>Vivamus dignissim lacinia varius. Cras.</td>
+          </tr>
+          <tr>
+            <th>
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                  </label>
+                </div>
+              </div>
+            </th>
+            <td>2</td>
+            <td>1234-0122</td>
+            <td>1234-0122</td>
+            <td>reg</td>
+            <td>cr</td>
+            <td>q</td>
+            <td>USA</td>
+            <td>_1</td>
+            <td>eng</td>
+            <td>2018</td>
+            <td>9999</td>
+            <td>Etiam convallis arcu sed lobortis.</td>
+          </tr>
+          <tr>
+            <th>
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                  </label>
+                </div>
+              </div>
+            </th>
+            <td>3</td>
+            <td>1234-4513</td>
+            <td>1234-4513</td>
+            <td>reg</td>
+            <td>cr</td>
+            <td>q</td>
+            <td>USA</td>
+            <td>_1</td>
+            <td>eng</td>
+            <td>2019</td>
+            <td>9999</td>
+            <td>Nunc aliquet eu leo nec.</td>
+          </tr>
+          <tr>
+            <th>
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                  </label>
+                </div>
+              </div>
+            </th>
+            <td>4</td>
+            <td>1234-8351</td>
+            <td>1234-8343</td>
+            <td>reg</td>
+            <td>ta</td>
+            <td>m</td>
+            <td>GBR</td>
+            <td>_1</td>
+            <td>eng</td>
+            <td>2015</td>
+            <td>9999</td>
+            <td>Donec malesuada tincidunt malesuada. Vivamus.</td>
+          </tr>
+          <tr>
+            <th>
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                  </label>
+                </div>
+              </div>
+            </th>
+            <td>5</td>
+            <td>1234-8343</td>
+            <td>1234-8343</td>
+            <td>reg</td>
+            <td>cr</td>
+            <td>m</td>
+            <td>GBR</td>
+            <td>_1</td>
+            <td>eng</td>
+            <td>2015</td>
+            <td>9999</td>
+            <td>Integer vulputate, est tincidunt accumsan.</td>
+          </tr>
+          <tr>
+            <th>
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                  </label>
+                </div>
+              </div>
+            </th>
+            <td>6</td>
+            <td>1234-8343</td>
+            <td>1234-8343</td>
+            <td>reg</td>
+            <td>cr</td>
+            <td>m</td>
+            <td>GBR</td>
+            <td>_1</td>
+            <td>eng</td>
+            <td>2015</td>
+            <td>9999</td>
+            <td>Nam finibus faucibus imperdiet. Fusce.</td>
+          </tr>
+          <tr class="is-selected">
+            <th>
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox" checked>
+                  </label>
+                </div>
+              </div>
+            </th>
+            <td>7</td>
+            <td>1234-6065</td>
+            <td>1234-6057</td>
+            <td>wor</td>
+            <td>cr</td>
+            <td>b</td>
+            <td>USA</td>
+            <td>_1</td>
+            <td>eng</td>
+            <td>2019</td>
+            <td>9999</td>
+            <td>Mauris vehicula diam non tellus.</td>
+          </tr>
+          <tr>
+            <th>
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                  </label>
+                </div>
+              </div>
+            </th>
+            <td>8</td>
+            <td>1234-6057</td>
+            <td>1234-6057</td>
+            <td>wor</td>
+            <td>ta</td>
+            <td>b</td>
+            <td>USA</td>
+            <td>_1</td>
+            <td>eng</td>
+            <td>2019</td>
+            <td>9999</td>
+            <td>Phasellus elementum lacus a ipsum.</td>
+          </tr>
+          <tr>
+            <th>
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                  </label>
+                </div>
+              </div>
+            </th>
+            <td>9</td>
+            <td>1234-6259</td>
+            <td>1234-6259</td>
+            <td>reg</td>
+            <td>cr</td>
+            <td>a</td>
+            <td>NGA</td>
+            <td>_e</td>
+            <td>eng</td>
+            <td>2019</td>
+            <td>9999</td>
+            <td>Duis mauris arcu, porttitor vel.</td>
+          </tr>
+          <tr>
+            <th>
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                  </label>
+                </div>
+              </div>
+            </th>
+            <td>10</td>
+            <td>1234-6240</td>
+            <td>1234-6259</td>
+            <td>reg</td>
+            <td>ta</td>
+            <td>a</td>
+            <td>NGA</td>
+            <td>_e</td>
+            <td>eng</td>
+            <td>2019</td>
+            <td>9999</td>
+            <td>Aenean vestibulum lacus vel commodo.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>
