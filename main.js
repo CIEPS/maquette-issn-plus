@@ -10,12 +10,12 @@ const addListenerForModal = function (fieldName) {
         event.preventDefault();
         modal.classList.remove('is-active');
         html.classList.remove('is-clipped');
-      }
+      };
 
       modal.querySelector(`.modal.${fieldName} .modal-background`).addEventListener('click', closeModal);
       modal.querySelector(`.modal.${fieldName} .delete`).addEventListener('click', closeModal);
       modal.querySelector(`.modal.${fieldName} .button.is-danger`).addEventListener('click', closeModal);
     });
-  })
+  });
 };
 addListenerForModal('field-008');

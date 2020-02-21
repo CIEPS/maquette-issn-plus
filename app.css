@@ -16644,17 +16644,55 @@ html {
 	background-color: #efefef;
 }
 
-.form-inline .control {
-	display: inline-block;
-	vertical-align: middle;
-	width: auto;
+.field-box {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.form-inline .label {
-	display: inline-flex;
-	margin-right: 10px;
+.field-box .field {
+	margin-bottom: 0.5rem;
 }
 
-.form-inline:not(:last-child) {
- margin: 0 10px 0 0;
+.field-box .field:not(:last-child) {
+	margin-right: 0.5rem;
+}
+
+.field-preview {
+	width: 100%;
+}
+
+fieldset {
+	border: 1px solid #dbdbdb;
+	padding: 0.5rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+legend {
+	padding: 5px;
+	border: 1px solid #dbdbdb;
+	border-radius: 5px;
+}
+
+fieldset:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+.label {
+	font-weight: normal;
+}
+
+.field.is-floating-label .label {
+	top: -0.7em;
+	padding-left: .125em;
+	padding-right: .125em;
+}
+
+.field.is-floating-in-label .label, .field.is-floating-label .label {
+	position: absolute;
+	left: 1em;
+	font-size: 0.75rem;
+	background-color: white;
+	z-index: 5;
 }
