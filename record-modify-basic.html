@@ -18,22 +18,23 @@
     <div id="container-aside" class="column is-1 is-fullheight is-paddingless is-marginless is-hidden-mobile">
       <aside id="menu" class="is-fullheight">
         <div id="top-menu" class="has-text-centered">
-          <a href="/maquette-issn-plus" class="is-paddingless router-link-exact-active router-link-active"><img src="logo.png"
-              alt="logo" class="image"></a>
+          <a href="/maquette-issn-plus" class="is-paddingless router-link-exact-active router-link-active"><img
+              src="logo.png" alt="logo" class="image"></a>
           <a href="/maquette-issn-plus/search-table.html" class="is-paddingless"><span
               data-label="Search for bibliographic records" class="is-info is-right is-medium b-tooltip"
               style="transition-delay: 0ms;"><span class="icon is-large"><i
                   class="mdi mdi-magnify-plus-outline mdi-48px"></i></span></span></a><a href="/maquette-issn-plus"
-            class="is-paddingless"><span data-label="create a new record block" class="is-info is-right is-medium b-tooltip"
-              style="transition-delay: 0ms;"><span class="icon is-large"><i
+            class="is-paddingless"><span data-label="create a new record block"
+              class="is-info is-right is-medium b-tooltip" style="transition-delay: 0ms;"><span class="icon is-large"><i
                   class="mdi mdi-file-document-box mdi-48px"></i></span></span></a><a href="/maquette-issn-plus"
             class="is-paddingless"><span data-label="import a marc21 file " class="is-info is-right is-medium b-tooltip"
               style="transition-delay: 0ms;"><span class="icon is-large"><i
                   class="mdi mdi-upload mdi-48px"></i></span></span></a></div>
         <div id="bottom-menu" class="has-text-centered"><a href="/maquette-issn-plus" class="is-paddingless"><span
-              data-label="elasticsearch" class="is-info is-right is-medium b-tooltip" style="transition-delay: 0ms;"><span
-                class="icon is-large"><i class="mdi mdi-database-plus mdi-48px"></i></span></span></a><a
-            href="/maquette-issn-plus" class="router-link is-paddingless"><span data-label="admin page"
+              data-label="elasticsearch" class="is-info is-right is-medium b-tooltip"
+              style="transition-delay: 0ms;"><span class="icon is-large"><i
+                  class="mdi mdi-database-plus mdi-48px"></i></span></span></a><a href="/maquette-issn-plus"
+            class="router-link is-paddingless"><span data-label="admin page"
               class="is-info is-right is-medium b-tooltip" style="transition-delay: 0ms;"><span class="icon is-large"><i
                   class="mdi mdi-settings mdi-48px"></i></span></span></a><a href="/maquette-issn-plus"
             class="is-paddingless"><span data-label="logout" class="is-info is-right is-medium b-tooltip"
@@ -43,18 +44,31 @@
       </aside>
     </div>
     <div id="app" class="container column is-fluid">
-      <div class="card">
+      <div class="record card">
+        <header class="card-header has-background-light">
+          <div class="card-header-title">
+            <div class="level is-marginless">
+              <div class="level-left">
+                <div class="level-item">
+                  <span class="is-size-4">
+                    Journal of science and other stuff (Print)
+                  </span>
+                </div>
+                <div class="level-item">
+                  <span class="tags has-addons">
+                    <span class="tag is-info is-light">ISSN</span>
+                    <span class="tag is-white">1234-6060</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
         <div class="card-content">
-          <p class="title">
-            Mauris vehicula diam non tellus.
-          </p>
-          <p class="subtitle">
-            1234-6065
-          </p>
           <div class="tabs">
             <ul>
-              <li class="is-active"><a href="/maquette-issn-plus/record-modify-basic.html">Basic Mode</a></li>
-              <li><a href="/maquette-issn-plus/record-modify-expert.html">Expert Mode</a></li>
+              <li><a href="/maquette-issn-plus/record-modify-basic.html">Basic Mode</a></li>
+              <li class="is-active"><a href="/maquette-issn-plus/record-modify-expert.html">Expert Mode</a></li>
             </ul>
           </div>
           <div class="level">
@@ -75,12 +89,319 @@
               </div>
               <div class="level-item">
                 <div class="field">
-                  <label class="label">Medium</label>
+                  <label class="label">Center code</label>
                   <div class="control">
                     <div class="select">
                       <select>
-                        <option>Print</option>
-                        <option>Online</option>
+                        <option>OP</option>
+                        <option>Egypt</option>
+                        <option>Chile</option>
+                        <option>Uruguay</option>
+                        <option>Ghana</option>
+                        <option>Tanzania, United Republic of</option>
+                        <option>Portugal</option>
+                        <option>Gambi</option>
+                        <option>India</option>
+                        <option>Columbia</option>
+                        <option>China</option>
+                        <option>Greece</option>
+                        <option>Venezuela</option>
+                        <option>Algeria</option>
+                        <option>Romania</option>
+                        <option>Korea - Republic of</option>
+                        <option>Turkey</option>
+                        <option>Jamaica</option>
+                        <option>Croatia</option>
+                        <option>Slovenia</option>
+                        <option>Saudi Arabia</option>
+                        <option>Czech Republic</option>
+                        <option>Slovak Republic</option>
+                        <option>Ecuador</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <label class="label">Add field</label>
+          <div class="field has-addons">
+            <p class="control">
+              <div class="select">
+                <select>
+                  <option>022 - International Standard Serial Number</option>
+                  <option>040 - Cataloging Source</option>
+                  <option>245 - Title Statement</option>
+                  <option>260 - Publication, Distribution, etc. (Imprint)</option>
+                </select>
+              </div>
+            </p>
+            <p class="control">
+              <a class="button is-link">
+                <span class="icon is-small">
+                  <i class="fas fa-plus"></i>
+                </span>
+                <span>Add</span>
+              </a>
+            </p>
+          </div>
+
+          <div class="panel">
+            <p class="panel-heading">
+              007 - Physical Description Fixed Field-General Information
+            </p>
+            <div class="panel-block">
+              <div class="field form-inline">
+                <label class="label">Medium</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>Print</option>
+                      <option>Online</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-block">
+              <div class="container is-fluid is-marginless is-paddingless">
+                <div class="field">
+                  <p class="control is-expanded">
+                    <input class="input" type="text" placeholder="Type some data" value="ta" disabled>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <p class="panel-heading">
+              008 - Fixed-Length Data Elements-General Information
+            </p>
+            <div class="panel-block">
+              <div class="container is-fluid is-marginless is-paddingless">
+                <div class="field has-addons">
+                  <p class="control is-expanded">
+                    <input class="input" type="text" placeholder="Type some data"
+                      value="190816c18699999enkwr|p\\\\\\\0\\\a0eng\\" disabled>
+                  </p>
+                  <p class="control">
+                    <a class="button field-008 is-link">
+                      <span class="icon is-small">
+                        <i class="fas fa-edit"></i>
+                      </span>
+                      <span>Edit</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <p class="panel-heading">
+              044 - Country of Publishing/Producing Entity Code
+              <button class="delete is-pulled-right"></button>
+            </p>
+            <div class="panel-block">
+              <div class="field form-inline">
+                <label class="label">Country ISO 3</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>ABW Aruba</option>
+                      <option>AFG Afghanistan</option>
+                      <option>AGO Angola</option>
+                      <option>AIA Anguilla</option>
+                      <option>ALA Åland Islands</option>
+                      <option>ALB Albania</option>
+                      <option>AND Andorra</option>
+                      <option>ANT Netherlands Antilles</option>
+                      <option>ARE United Arab Emirates</option>
+                      <option>ARG Argentina</option>
+                      <option>ARM Armenia</option>
+                      <option>ASM American Samoa</option>
+                      <option>ATA Antarctica</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-block">
+              <div class="container is-fluid is-marginless is-paddingless">
+                <div class="field has-addons">
+                  <p class="control">
+                    <span class="select">
+                      <select>
+                        <option>/</option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                    </span>
+                  </p>
+                  <p class="control">
+                    <span class="select">
+                      <select>
+                        <option>/</option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                    </span>
+                  </p>
+                  <p class="control is-expanded">
+                    <input class="input" type="text" placeholder="Type some data" value="$c GBR" disabled>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel is-warning">
+            <p class="panel-heading">
+              210 - Abbreviated Title
+              <span class="tag">
+                input error
+              </span>
+              <span class="tag">
+                wrong abbreviation
+              </span>
+              <button class="delete is-pulled-right"></button>
+            </p>
+            <div class="panel-block">
+              <div class="container is-fluid is-marginless is-paddingless">
+                <div class="field has-addons">
+                  <p class="control">
+                    <span class="select">
+                      <select>
+                        <option>/</option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                    </span>
+                  </p>
+                  <p class="control">
+                    <span class="select">
+                      <select>
+                        <option>/</option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                    </span>
+                  </p>
+                  <p class="control is-expanded">
+                    <input class="input" type="text" placeholder="Type some data" value="$a Nature $b (Lond.)">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <p class="panel-heading">
+              245 - Title Statement
+              <button class="delete is-pulled-right"></button>
+            </p>
+            <div class="panel-block">
+              <div class="container is-fluid is-marginless is-paddingless">
+                <div class="field has-addons">
+                  <p class="control">
+                    <span class="select">
+                      <select>
+                        <option>/</option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                    </span>
+                  </p>
+                  <p class="control">
+                    <span class="select">
+                      <select>
+                        <option>/</option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                    </span>
+                  </p>
+                  <p class="control is-expanded">
+                    <input class="input" type="text" placeholder="Type some data">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <footer class="card-footer">
+          <div class="card-footer-item is-paddingless">
+            <button class="button is-danger is-fullwidth is-radiusless">
+              <span class="icon is-small">
+                <i class="fas fa-times"></i>
+              </span>
+              <span>Cancel</span>
+            </button>
+          </div>
+          <div class="card-footer-item is-paddingless">
+            <button class="button is-success is-fullwidth is-radiusless">
+              <span class="icon is-small">
+                <i class="fas fa-check"></i>
+              </span>
+              <span>Save</span>
+            </button>
+          </div>
+        </footer>
+      </div>
+
+      <div class="record card">
+        <header class="card-header has-background-light">
+          <div class="card-header-title">
+            <div class="level is-marginless">
+              <div class="level-left">
+                <div class="level-item">
+                  <span class="is-size-4">
+                    Another Journal of science (Print)
+                  </span>
+                </div>
+                <div class="level-item">
+                  <span class="tags has-addons">
+                    <span class="tag is-info is-light">ISSN</span>
+                    <span class="tag is-white">1234-8888</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="card-content">
+          <div class="tabs">
+            <ul>
+              <li><a href="/maquette-issn-plus/record-modify-basic.html">Basic Mode</a></li>
+              <li class="is-active"><a href="/maquette-issn-plus/record-modify-expert.html">Expert Mode</a></li>
+            </ul>
+          </div>
+          <div class="level">
+            <div class="level-left">
+              <div class="level-item">
+                <div class="field">
+                  <label class="label">Category</label>
+                  <div class="control">
+                    <div class="select">
+                      <select>
+                        <option>Register</option>
+                        <option>Free</option>
+                        <option>Work</option>
                       </select>
                     </div>
                   </div>
@@ -147,6 +468,7 @@
               </div>
             </div>
           </div>
+
           <label class="label">Add field</label>
           <div class="field has-addons">
             <p class="control">
@@ -160,7 +482,7 @@
               </div>
             </p>
             <p class="control">
-              <a class="button is-info">
+              <a class="button is-link">
                 <span class="icon is-small">
                   <i class="fas fa-plus"></i>
                 </span>
@@ -169,85 +491,83 @@
             </p>
           </div>
 
-          <article class="panel is-info">
+          <div class="panel">
             <p class="panel-heading">
-              008 - Fixed-Length Data Elements-General Information
-              <button class="delete is-pulled-right"></button>
+              007 - Physical Description Fixed Field-General Information
             </p>
             <div class="panel-block">
-              <div class="level">
-                <div class="level-left">
-                  <div class="level-item">
-                    <div class="field">
-                      <label class="label">Status</label>
-                      <div class="control">
-                        <div class="select">
-                          <select>
-                            <option>dead</option>
-                            <option>alive</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="level-item">
-                    <div class="field">
-                      <label class="label">Start year</label>
-                      <div class="control">
-                        <input class="input" type="text" value="2011">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="level-item">
-                    <div class="field">
-                      <label class="label">End year</label>
-                      <div class="control">
-                        <input class="input" type="text" value="2014">
-                      </div>
-                    </div>
+              <div class="field form-inline">
+                <label class="label">Medium</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>Print</option>
+                      <option>Online</option>
+                    </select>
                   </div>
                 </div>
               </div>
             </div>
             <div class="panel-block">
-              <p class="control is-expanded">
-                <input class="input" type="text" placeholder="Type some data"
-                  value="190816c18699999enkwr|p\\\\\\\0\\\a0eng\\" readonly>
-              </p>
+              <div class="container is-fluid is-marginless is-paddingless">
+                <div class="field">
+                  <p class="control is-expanded">
+                    <input class="input" type="text" placeholder="Type some data" value="ta" disabled>
+                  </p>
+                </div>
+              </div>
             </div>
-          </article>
+          </div>
 
-          <article class="panel is-info">
+          <div class="panel">
+            <p class="panel-heading">
+              008 - Fixed-Length Data Elements-General Information
+            </p>
+            <div class="panel-block">
+              <div class="container is-fluid is-marginless is-paddingless">
+                <div class="field has-addons">
+                  <p class="control is-expanded">
+                    <input class="input" type="text" placeholder="Type some data"
+                      value="190816c18699999enkwr|p\\\\\\\0\\\a0eng\\" disabled>
+                  </p>
+                  <p class="control">
+                    <a class="button field-008 is-link">
+                      <span class="icon is-small">
+                        <i class="fas fa-edit"></i>
+                      </span>
+                      <span>Edit</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
             <p class="panel-heading">
               044 - Country of Publishing/Producing Entity Code
               <button class="delete is-pulled-right"></button>
             </p>
             <div class="panel-block">
-              <div class="level">
-                <div class="level-left">
-                  <div class="level-item">
-                    <div class="field">
-                      <label class="label">Country ISO 3</label>
-                      <div class="control">
-                        <div class="select">
-                          <select>
-                            <option>ABW Aruba</option>
-                            <option>AFG Afghanistan</option>
-                            <option>AGO Angola</option>
-                            <option>AIA Anguilla</option>
-                            <option>ALA Åland Islands</option>
-                            <option>ALB Albania</option>
-                            <option>AND Andorra</option>
-                            <option>ANT Netherlands Antilles</option>
-                            <option>ARE United Arab Emirates</option>
-                            <option>ARG Argentina</option>
-                            <option>ARM Armenia</option>
-                            <option>ASM American Samoa</option>
-                            <option>ATA Antarctica</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
+              <div class="field form-inline">
+                <label class="label">Country ISO 3</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>ABW Aruba</option>
+                      <option>AFG Afghanistan</option>
+                      <option>AGO Angola</option>
+                      <option>AIA Anguilla</option>
+                      <option>ALA Åland Islands</option>
+                      <option>ALB Albania</option>
+                      <option>AND Andorra</option>
+                      <option>ANT Netherlands Antilles</option>
+                      <option>ARE United Arab Emirates</option>
+                      <option>ARG Argentina</option>
+                      <option>ARM Armenia</option>
+                      <option>ASM American Samoa</option>
+                      <option>ATA Antarctica</option>
+                    </select>
                   </div>
                 </div>
               </div>
@@ -278,14 +598,14 @@
                     </span>
                   </p>
                   <p class="control is-expanded">
-                    <input class="input" type="text" placeholder="Type some data" value="$c GBR" readonly>
+                    <input class="input" type="text" placeholder="Type some data" value="$c GBR" disabled>
                   </p>
                 </div>
               </div>
             </div>
-          </article>
+          </div>
 
-          <article class="panel is-warning">
+          <div class="panel is-warning">
             <p class="panel-heading">
               210 - Abbreviated Title
               <span class="tag">
@@ -327,9 +647,9 @@
                 </div>
               </div>
             </div>
-          </article>
+          </div>
 
-          <article class="panel is-info">
+          <div class="panel">
             <p class="panel-heading">
               245 - Title Statement
               <button class="delete is-pulled-right"></button>
@@ -365,27 +685,27 @@
                 </div>
               </div>
             </div>
-          </article>
-
-          <div class="field is-grouped">
-            <div class="control">
-              <button class="button is-danger">
-                <span class="icon is-small">
-                  <i class="fas fa-times"></i>
-                </span>
-                <span>Cancel</span>
-              </button>
-            </div>
-            <div class="control">
-              <button class="button is-success">
-                <span class="icon is-small">
-                  <i class="fas fa-check"></i>
-                </span>
-                <span>Save</span>
-              </button>
-            </div>
           </div>
+
         </div>
+        <footer class="card-footer">
+          <div class="card-footer-item is-paddingless">
+            <button class="button is-danger is-fullwidth is-radiusless">
+              <span class="icon is-small">
+                <i class="fas fa-times"></i>
+              </span>
+              <span>Cancel</span>
+            </button>
+          </div>
+          <div class="card-footer-item is-paddingless">
+            <button class="button is-success is-fullwidth is-radiusless">
+              <span class="icon is-small">
+                <i class="fas fa-check"></i>
+              </span>
+              <span>Save</span>
+            </button>
+          </div>
+        </footer>
       </div>
     </div>
   </div>
