@@ -16644,7 +16644,7 @@ html {
 	background-color: #efefef;
 }
 
-.form-inline .input, .form-inline .control {
+.form-inline .control {
 	display: inline-block;
 	vertical-align: middle;
 	width: auto;
@@ -16653,4 +16653,8 @@ html {
 .form-inline .label {
 	display: inline-flex;
 	margin-right: 10px;
+}
+
+.form-inline:not(:last-child) {
+ margin: 0 10px 0 0;
 }
