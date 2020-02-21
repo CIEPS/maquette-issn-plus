@@ -16693,3 +16693,7 @@ fieldset:not(:last-child) {
 	background-color: white;
 	z-index: 5;
 }
+
+.text-fields {
+	flex-grow: 1;
+}
