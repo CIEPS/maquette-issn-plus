@@ -1231,7 +1231,9 @@
           </fieldset>
 
           <fieldset>
-            <legend class="has-background-light">008 - Fixed-Length Data Elements-General Information</legend>
+            <legend class="has-background-light">
+              008 - Fixed-Length Data Elements-General Information
+            </legend>
             <div class="field-box">
               <div class="field">
                 <p class="control">
@@ -1254,14 +1256,21 @@
           </fieldset>
 
           <fieldset>
-            <legend class="has-background-light">044 - Country of Publishing/Producing Entity Code</legend>
+            <legend class="has-background-light">
+              044 - Country of Publishing/Producing Entity Code
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-times"></i>
+                </span>
+              </button>
+            </legend>
             <div class="field-box">
               <div class="field is-floating-label">
                 <label class="label">Ind. 1</label>
                 <div class="control">
                   <div class="select">
                     <select>
-                      <option>/</option>
+                      <option>\</option>
                       <option>0</option>
                       <option>1</option>
                       <option>2</option>
@@ -1276,7 +1285,7 @@
                 <div class="control">
                   <div class="select">
                     <select>
-                      <option>/</option>
+                      <option>\</option>
                       <option>0</option>
                       <option>1</option>
                       <option>2</option>
@@ -1312,7 +1321,7 @@
               <div class="field is-floating-label field-preview">
                 <p class="control">
                   <label class="label">Preview</label>
-                  <input class="input" type="text" placeholder="Type some data" value="=044 $c GBR" disabled>
+                  <input class="input" type="text" placeholder="Type some data" value="=044 \\ $c GBR" disabled>
                 </p>
               </div>
             </div>
@@ -1327,6 +1336,11 @@
               <span class="tag">
                 wrong abbreviation
               </span>
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-times"></i>
+                </span>
+              </button>
             </legend>
 
             <div class="field-box">
@@ -1335,7 +1349,7 @@
                 <div class="control">
                   <div class="select">
                     <select>
-                      <option>/</option>
+                      <option>\</option>
                       <option>0</option>
                       <option>1</option>
                       <option>2</option>
@@ -1350,7 +1364,7 @@
                 <div class="control">
                   <div class="select">
                     <select>
-                      <option>/</option>
+                      <option>\</option>
                       <option>0</option>
                       <option>1</option>
                       <option>2</option>
@@ -1369,7 +1383,7 @@
               <div class="field is-floating-label field-preview">
                 <p class="control">
                   <label class="label">Preview</label>
-                  <input class="input" type="text" placeholder="Type some data" value="=210 $a Nature $b (Lond.)"
+                  <input class="input" type="text" placeholder="Type some data" value="=210 1\ $a Nature $b (Lond.)"
                     disabled>
                 </p>
               </div>
@@ -1379,6 +1393,11 @@
           <fieldset>
             <legend class="has-background-light">
               245 - Title Statement
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-times"></i>
+                </span>
+              </button>
             </legend>
 
             <div class="field-box">
@@ -1387,7 +1406,7 @@
                 <div class="control">
                   <div class="select">
                     <select>
-                      <option>/</option>
+                      <option>\</option>
                       <option>0</option>
                       <option>1</option>
                       <option>2</option>
@@ -1402,7 +1421,7 @@
                 <div class="control">
                   <div class="select">
                     <select>
-                      <option>/</option>
+                      <option>\</option>
                       <option>0</option>
                       <option>1</option>
                       <option>2</option>
@@ -1421,8 +1440,198 @@
               <div class="field is-floating-label field-preview">
                 <p class="control">
                   <label class="label">Preview</label>
-                  <input class="input" type="text" placeholder="Type some data" value="=245"
+                  <input class="input" type="text" placeholder="Type some data" value="=245 \\" disabled>
+                </p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="has-background-light">
+              <i class="fas fa-arrows-alt"></i>
+              787 - Other Relationship Entry
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-times"></i>
+                </span>
+              </button>
+            </legend>
+
+            <div class="field-box">
+              <div class="field is-floating-label">
+                <label class="label">Ind. 1</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-floating-label">
+                <label class="label">Ind. 2</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="text" placeholder="Type some data" value="$t Nature collections">
+                </p>
+              </div>
+
+              <div class="field is-floating-label field-preview">
+                <p class="control">
+                  <label class="label">Preview</label>
+                  <input class="input" type="text" placeholder="Type some data" value="=787 0\ $t Nature collections"
                     disabled>
+                </p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="has-background-light">
+              <i class="fas fa-arrows-alt"></i>
+              787 - Other Relationship Entry
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-times"></i>
+                </span>
+              </button>
+            </legend>
+
+            <div class="field-box">
+              <div class="field is-floating-label">
+                <label class="label">Ind. 1</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-floating-label">
+                <label class="label">Ind. 2</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="text" placeholder="Type some data"
+                    value="$t Nature structural biology $x 1072-8368">
+                </p>
+              </div>
+
+              <div class="field is-floating-label field-preview">
+                <p class="control">
+                  <label class="label">Preview</label>
+                  <input class="input" type="text" placeholder="Type some data"
+                    value="=787 0\ $t Nature structural biology $x 1072-8368" disabled>
+                </p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="has-background-light">
+              <i class="fas fa-arrows-alt"></i>
+              787 - Other Relationship Entry
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-times"></i>
+                </span>
+              </button>
+            </legend>
+
+            <div class="field-box">
+              <div class="field is-floating-label">
+                <label class="label">Ind. 1</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-floating-label">
+                <label class="label">Ind. 2</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="text" placeholder="Type some data"
+                    value="$t Nature biotechnology (Print) $x 1087-0156">
+                </p>
+              </div>
+
+              <div class="field is-floating-label field-preview">
+                <p class="control">
+                  <label class="label">Preview</label>
+                  <input class="input" type="text" placeholder="Type some data"
+                    value="=787 0\ $t Nature biotechnology (Print) $x 1087-0156" disabled>
                 </p>
               </div>
             </div>
@@ -1448,6 +1657,653 @@
         </footer>
       </div>
 
+      <div class="record card">
+        <header class="card-header has-background-light">
+          <div class="card-header-title">
+            <div class="level is-marginless">
+              <div class="level-left">
+                <div class="level-item">
+                  <span class="is-size-4">
+                    Another journal of science (Print)
+                  </span>
+                </div>
+                <div class="level-item">
+                  <span class="tags has-addons">
+                    <span class="tag is-info is-light">ISSN</span>
+                    <span class="tag is-white">1234-8888</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="card-content">
+          <div class="tabs">
+            <ul>
+              <li class="is-active"><a href="/maquette-issn-plus/record-modify-basic.html">Assisted Mode</a></li>
+              <li><a href="/maquette-issn-plus/record-modify-expert.html">Expert Mode</a></li>
+            </ul>
+          </div>
+          <div class="field-box">
+            <div class="field is-floating-label">
+              <label class="label">Category</label>
+              <div class="control">
+                <div class="select">
+                  <select>
+                    <option>Register</option>
+                    <option>Free</option>
+                    <option>Work</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field is-floating-label">
+              <label class="label">Center code</label>
+              <div class="control">
+                <div class="select">
+                  <select>
+                    <option>OP</option>
+                    <option>Egypt</option>
+                    <option>Chile</option>
+                    <option>Uruguay</option>
+                    <option>Ghana</option>
+                    <option>Tanzania, United Republic of</option>
+                    <option>Portugal</option>
+                    <option>Gambi</option>
+                    <option>India</option>
+                    <option>Columbia</option>
+                    <option>China</option>
+                    <option>Greece</option>
+                    <option>Venezuela</option>
+                    <option>Algeria</option>
+                    <option>Romania</option>
+                    <option>Korea - Republic of</option>
+                    <option>Turkey</option>
+                    <option>Jamaica</option>
+                    <option>Croatia</option>
+                    <option>Slovenia</option>
+                    <option>Saudi Arabia</option>
+                    <option>Czech Republic</option>
+                    <option>Slovak Republic</option>
+                    <option>Ecuador</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field is-floating-label has-addons">
+              <label class="label">Add field</label>
+              <p class="control is-narrow">
+                <div class="select is-fullwidth">
+                  <select>
+                    <option>030 - CODEN DESIGNATION</option>
+                    <option>041 - LANGUAGE CODE</option>
+                    <option>046 - SPECIAL CODED DATES</option>
+                    <option>080 - UNIVERSAL DECIMAL CLASSIFICATION NUMBER</option>
+                    <option>082 - DEWEY DECIMAL CLASSIFICATION NUMBER</option>
+                    <option>210 - ABBREVIATED TITLE</option>
+                    <option>222 - KEY TITLE</option>
+                    <option>245 - TITLE STATEMENT</option>
+                    <option>246 - VARYING FORM OF TITLE</option>
+                    <option>260 - PUBLICATION, DISTRIBUTION, ETC. (IMPRINT)</option>
+                    <option>264 - PRODUCTION, PUBLICATION, DISTRIBUTION, MANUFACTURE, AND COPYRIGHT NOTICE</option>
+                    <option>321 - FORMER PUBLICATION FREQUENCY</option>
+                    <option>336 - CONTENT TYPE</option>
+                    <option>337 - MEDIA TYPE</option>
+                    <option>338 - CARRIER TYPE</option>
+                    <option>362 - DATES OF PUBLICATION AND/OR SEQUENTIAL DESIGNATION</option>
+                    <option>510 - CITATION/REFERENCES NOTE</option>
+                    <option>533 - REPRODUCTION NOTE</option>
+                    <option>538 - SYSTEM DETAILS NOTE</option>
+                    <option>588 - SOURCE OF DESCRIPTION NOTE</option>
+                    <option>710 - ADDED ENTRY--CORPORATE NAME</option>
+                    <option>711 - ADDED ENTRY--MEETING NAME</option>
+                    <option>720 - ADDED ENTRY--UNCONTROLLED NAME</option>
+                    <option>760 - MAIN SERIES ENTRY</option>
+                    <option>762 - SUBSERIES ENTRY</option>
+                    <option>765 - ORIGINAL LANGUAGE ENTRY</option>
+                    <option>767 - TRANSLATION ENTRY</option>
+                    <option>770 - SUPPLEMENT/SPECIAL ISSUE ENTRY</option>
+                    <option>772 - SUPPLEMENT PARENT ENTRY</option>
+                    <option>773 - HOST ITEM ENTRY</option>
+                    <option>774 - CONSTITUENT UNIT ENTRY</option>
+                    <option>775 - OTHER EDITION ENTRY</option>
+                    <option>776 - ADDITIONAL PHYSICAL FORM ENTRY</option>
+                    <option>777 - ISSUED WITH ENTRY</option>
+                    <option>780 - PRECEDING ENTRY</option>
+                    <option>785 - SUCCEEDING ENTRY</option>
+                    <option>786 - DATA SOURCE ENTRY</option>
+                    <option>787 - OTHER RELATIONSHIP ENTRY</option>
+                    <option>856 - ELECTRONIC LOCATION AND ACCESS</option>
+                  </select>
+                </div>
+              </p>
+              <p class="control">
+                <a class="button is-link">
+                  <span class="icon is-small">
+                    <i class="fas fa-plus"></i>
+                  </span>
+                  <span>Add</span>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <fieldset>
+            <legend class="has-background-light">Leader</legend>
+            <div class="field-box">
+              <div class="field is-floating-label">
+                <label class="label">Bibliographic level</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>a - Monographic component part</option>
+                      <option>b - Serial component part</option>
+                      <option>c - Collection</option>
+                      <option>d - Subunit</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-floating-label">
+                <label class="label">Encoding Level</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option># - Full level</option>
+                      <option>1 - Full level, material not examined</option>
+                      <option>2 - Less-than-full level, material not examined</option>
+                      <option>3 - Abbreviated level</option>
+                      <option>4 - Core level</option>
+                      <option>5 - Partial (preliminary) level</option>
+                      <option>7 - Minimal level</option>
+                      <option>8 - Prepublication level</option>
+                      <option>u - Unknown</option>
+                      <option>z - Not applicable</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-floating-label">
+                <label class="label">Descriptive cataloging form</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option># - Non-ISBD</option>
+                      <option>a - AACR 2</option>
+                      <option>c - ISBD punctuation omitted</option>
+                      <option>i - ISBD punctuation included</option>
+                      <option>n - Non-ISBD punctuation omitted</option>
+                      <option>u - Unknown</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-floating-label field-preview">
+                <label class="label">Preview</label>
+                <p class="control">
+                  <input class="input" type="text" placeholder="Type some data" value="=LDR 02105cas a2200541 a 4500"
+                    disabled>
+                </p>
+              </div>
+            </div>
+
+          </fieldset>
+
+          <fieldset>
+            <legend class="has-background-light">007 - Physical Description Fixed Field-General Information</legend>
+            <div class="field-box">
+              <div class="field is-floating-label">
+                <label class="label">Medium</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>Print</option>
+                      <option>Online</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="field is-floating-label field-preview">
+                <label class="label">Preview</label>
+                <p class="control">
+                  <input class="input" type="text" placeholder="Type some data" value="=007 ta" disabled>
+                </p>
+              </div>
+            </div>
+
+          </fieldset>
+
+          <fieldset>
+            <legend class="has-background-light">
+              008 - Fixed-Length Data Elements-General Information
+            </legend>
+            <div class="field-box">
+              <div class="field">
+                <p class="control">
+                  <a class="button field-008 is-link">
+                    <span class="icon is-small">
+                      <i class="fas fa-edit"></i>
+                    </span>
+                    <span>Edit</span>
+                  </a>
+                </p>
+              </div>
+              <div class="field is-floating-label field-preview">
+                <p class="control">
+                  <label class="label">Preview</label>
+                  <input class="input" type="text" placeholder="Type some data"
+                    value="=008 190816c18699999enkwr|p\\\\\\\0\\\a0eng\\" disabled>
+                </p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="has-background-light">
+              044 - Country of Publishing/Producing Entity Code
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-times"></i>
+                </span>
+              </button>
+            </legend>
+            <div class="field-box">
+              <div class="field is-floating-label">
+                <label class="label">Ind. 1</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-floating-label">
+                <label class="label">Ind. 2</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-floating-label">
+                <label class="label">Country ISO 3</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>ABW Aruba</option>
+                      <option>AFG Afghanistan</option>
+                      <option>AGO Angola</option>
+                      <option>AIA Anguilla</option>
+                      <option>ALA Åland Islands</option>
+                      <option>ALB Albania</option>
+                      <option>AND Andorra</option>
+                      <option>ANT Netherlands Antilles</option>
+                      <option>ARE United Arab Emirates</option>
+                      <option>ARG Argentina</option>
+                      <option>ARM Armenia</option>
+                      <option>ASM American Samoa</option>
+                      <option>ATA Antarctica</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-floating-label field-preview">
+                <p class="control">
+                  <label class="label">Preview</label>
+                  <input class="input" type="text" placeholder="Type some data" value="=044 \\ $c GBR" disabled>
+                </p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="has-background-warning">
+              210 - Abbreviated Title
+              <span class="tag">
+                input error
+              </span>
+              <span class="tag">
+                wrong abbreviation
+              </span>
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-times"></i>
+                </span>
+              </button>
+            </legend>
+
+            <div class="field-box">
+              <div class="field is-floating-label">
+                <label class="label">Ind. 1</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-floating-label">
+                <label class="label">Ind. 2</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="text" placeholder="Type some data" value="$a Nature $b (Lond.)">
+                </p>
+              </div>
+
+              <div class="field is-floating-label field-preview">
+                <p class="control">
+                  <label class="label">Preview</label>
+                  <input class="input" type="text" placeholder="Type some data" value="=210 1\ $a Nature $b (Lond.)"
+                    disabled>
+                </p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="has-background-light">
+              245 - Title Statement
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-times"></i>
+                </span>
+              </button>
+            </legend>
+
+            <div class="field-box">
+              <div class="field is-floating-label">
+                <label class="label">Ind. 1</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-floating-label">
+                <label class="label">Ind. 2</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="text" placeholder="Type some data" value="">
+                </p>
+              </div>
+
+              <div class="field is-floating-label field-preview">
+                <p class="control">
+                  <label class="label">Preview</label>
+                  <input class="input" type="text" placeholder="Type some data" value="=245 \\" disabled>
+                </p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="has-background-light">
+              <i class="fas fa-arrows-alt"></i>
+              787 - Other Relationship Entry
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-times"></i>
+                </span>
+              </button>
+            </legend>
+
+            <div class="field-box">
+              <div class="field is-floating-label">
+                <label class="label">Ind. 1</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-floating-label">
+                <label class="label">Ind. 2</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="text" placeholder="Type some data" value="$t Nature collections">
+                </p>
+              </div>
+
+              <div class="field is-floating-label field-preview">
+                <p class="control">
+                  <label class="label">Preview</label>
+                  <input class="input" type="text" placeholder="Type some data" value="=787 0\ $t Nature collections"
+                    disabled>
+                </p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="has-background-light">
+              <i class="fas fa-arrows-alt"></i>
+              787 - Other Relationship Entry
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-times"></i>
+                </span>
+              </button>
+            </legend>
+
+            <div class="field-box">
+              <div class="field is-floating-label">
+                <label class="label">Ind. 1</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-floating-label">
+                <label class="label">Ind. 2</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="text" placeholder="Type some data"
+                    value="$t Nature structural biology $x 1072-8368">
+                </p>
+              </div>
+
+              <div class="field is-floating-label field-preview">
+                <p class="control">
+                  <label class="label">Preview</label>
+                  <input class="input" type="text" placeholder="Type some data"
+                    value="=787 0\ $t Nature structural biology $x 1072-8368" disabled>
+                </p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="has-background-light">
+              <i class="fas fa-arrows-alt"></i>
+              787 - Other Relationship Entry
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-plus"></i>
+                </span>
+              </button>
+              <button class="button is-small">
+                <span class="icon is-small">
+                  <i class="fas fa-times"></i>
+                </span>
+              </button>
+            </legend>
+
+            <div class="field-box">
+              <div class="field is-floating-label">
+                <label class="label">Ind. 1</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-floating-label">
+                <label class="label">Ind. 2</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>\</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="text" placeholder="Type some data"
+                    value="$t Nature biotechnology (Print) $x 1087-0156">
+                </p>
+              </div>
+
+              <div class="field is-floating-label field-preview">
+                <p class="control">
+                  <label class="label">Preview</label>
+                  <input class="input" type="text" placeholder="Type some data"
+                    value="=787 0\ $t Nature biotechnology (Print) $x 1087-0156" disabled>
+                </p>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <footer class="card-footer">
+          <div class="card-footer-item is-paddingless">
+            <button class="button is-danger is-fullwidth is-radiusless">
+              <span class="icon is-small">
+                <i class="fas fa-times"></i>
+              </span>
+              <span>Cancel</span>
+            </button>
+          </div>
+          <div class="card-footer-item is-paddingless">
+            <button class="button is-success is-fullwidth is-radiusless">
+              <span class="icon is-small">
+                <i class="fas fa-check"></i>
+              </span>
+              <span>Save</span>
+            </button>
+          </div>
+        </footer>
+      </div>
     </div>
   </div>
   <script src="main.js"></script>
