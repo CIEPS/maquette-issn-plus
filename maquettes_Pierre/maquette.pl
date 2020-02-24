@@ -112,47 +112,6 @@ $orifield=~s/\x1f/\$/g;
 print OUT "</table>";
 
 
-my $essai = <<ESSAI;
-<div>
-<div class="field has-addons">
-<!----> 
-<div class="field is-floating-label">
-<label class="label">Imprint</label>
- <div class="control is-clearfix">
- <input type="text" autocomplete="on" id="imprint" expanded placeholder="Imprint" name="imprint" class="input"> 
- <!----> <!----> <!---->
- </div> <!---->
- </div>
- 
- <div class="field is-floating-label"><label class="label">type of publisher</label> <div class="control"><span class="select is-danger"><select id="select-editor" required="required"><!----> <option data-msgid="Earliest available publisher" data-current-language="en_US">Earliest available publisher</option><option data-msgid="Intervening publisher" data-current-language="en_US">Intervening publisher</option><option data-msgid="Current/latest publisher indicator" data-current-language="en_US">Current/latest publisher indicator</option></select></span> <!----></div> <p class="help is-danger">Sélectionnez un élément dans la liste.</p></div><button type="button" class="button" data-msgid="<!----> <span>add imprint</span> <!---->" data-current-language="en_US"><!----> <span>add imprint</span> <!----></button> <!----></div></div>
-
-
-<table border=0 width=80%>
-
-<tr>
-<td>
-<b-input type="text" value="222 ##" expanded id="key-title" name="keyTitle"></b-input>
-</td>
-<td width=94%  style="height:40px;" style="vertical-align:bottom">
-<div  class="field is-floating-label"><label class="label">Key title</label><b-input type="text" value=" $a Nature $b (London)" expanded id="key-title" name="keyTitle"  label="222 Key title" placeholder="$a $b"></b-input></div>
-</td>
-</tr>
-<tr>
-
-<td>
-<b-input type="text" value="222 ##" expanded id="key-title" name="keyTitle"></b-input>
-</td>
-
-<td width=94% style="height:40px;"  style="vertical-align:bottom">
-<div  class="field is-floating-label"><label class="label">Key title</label><b-input type="text" value=" $a Nature $b (London)" expanded id="key-title" name="keyTitle"  label="222 Key title" placeholder="$a $b"></b-input></div>
-</td>
-</tr>
-
-</table>
-
-ESSAI
-
-#print OUT "$essai";
 
 
 my $message2 = <<END_MESSAGE2;
