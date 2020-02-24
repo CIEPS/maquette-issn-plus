@@ -214,6 +214,10 @@ print OUT "<td width=3\%><font color=\"blue\"><b><b-tooltip position=\"is-right\
 print OUT "</td>\n";
 
 print OUT "<td width=4\%>\n";
+$refer="";
+if ($ref{$tax."_".$i2} ne "") {$refer=$ref{$tax."_".$i2}}
+if ($ref{$tax.$i1} ne "") {$refer=$ref{$tax.$i1}}
+if ($refer eq "") {$refer=$ref{$tax}}
 
 $i1=~s/ /\#/;
 $i2=~s/ /\#/;
@@ -224,7 +228,9 @@ print OUT "<b-input type=\"text\" maxlength=\"2\" value=\"$i1$i2\"  id=\"key-tit
 print OUT "</td>\n";
 print OUT "<td width=90\%  style=\"height:10px\;\" style=\"vertical-align:top\">\n";
 
-print OUT "<div  class=\"field is-floating-label\"  ><label class=\"label\" style=\"color:blue\">$ref{$tax}</label>\n";
+
+
+print OUT "<div  class=\"field is-floating-label\"  ><label class=\"label\" style=\"color:blue\">$refer</label>\n";
 print OUT "<b-input type=\"text\"  style=\"min-height: 10px\" rows=\"1\" value=\"$field\" expanded id=\"key-title\" name=\"keyTitle\" placeholder=\"\$a \$b\"></b-input></div>\n";
 if ($orifield ne "") {
 print OUT "<b-input type=\"text\" style=\"min-height: 10px\"  rows=\"1\" value=\"$orifield\" expanded id=\"key-title\" name=\"keyTitle\" placeholder=\"\$a \$b\"></b-input>\n";
@@ -260,7 +266,19 @@ $ref{"210"}="ABBREVIATED TITLE";
 $ref{"222"}="KEY TITLE";
 $ref{"245"}="TITLE STATEMENT";
 $ref{"246"}="VARYING FORM OF TITLE";
+$ref{"246_0"}="VARYING FORM OF TITLE - Portion of title";
+$ref{"246_1"}="VARYING FORM OF TITLE - Parallel title";
+$ref{"246_2"}="VARYING FORM OF TITLE - Distinctive title";
+$ref{"246_3"}="VARYING FORM OF TITLE - Other title";
+$ref{"246_4"}="VARYING FORM OF TITLE - Cover title";
+$ref{"246_5"}="VARYING FORM OF TITLE - Added title page title";
+$ref{"246_6"}="VARYING FORM OF TITLE - Caption title";
+$ref{"246_7"}="VARYING FORM OF TITLE - Running title";
+$ref{"246_8"}="VARYING FORM OF TITLE - Spine title";
 $ref{"260"}="PUBLICATION, DISTRIBUTION, ETC. (IMPRINT)";
+$ref{"260 "}="PUBLICATION, DISTRIBUTION, ETC. (IMPRINT) - Not applicable/No information provided/Earliest available publisher";
+$ref{"2602"}="PUBLICATION, DISTRIBUTION, ETC. (IMPRINT) - Intervening publisher";
+$ref{"2603"}="PUBLICATION, DISTRIBUTION, ETC. (IMPRINT) - Current/latest publisher";
 $ref{"264"}="PRODUCTION, PUBLICATION, DISTRIBUTION, MANUFACTURE, AND COPYRIGHT NOTICE";
 $ref{"321"}="FORMER PUBLICATION FREQUENCY";
 $ref{"336"}="CONTENT TYPE";
@@ -286,7 +304,24 @@ $ref{"775"}="OTHER EDITION ENTRY";
 $ref{"776"}="ADDITIONAL PHYSICAL FORM ENTRY";
 $ref{"777"}="ISSUED WITH ENTRY";
 $ref{"780"}="PRECEDING ENTRY";
+$ref{"780_0"}="PRECEDING ENTRY : Continues";
+$ref{"780_1"}="PRECEDING ENTRY : Continues in part";
+$ref{"780_2"}="PRECEDING ENTRY : Supersedes";
+$ref{"780_3"}="PRECEDING ENTRY : Supersedes in part";
+$ref{"780_4"}="PRECEDING ENTRY : Formed by the union of ... and ...";
+$ref{"780_5"}="PRECEDING ENTRY : Absorbed";
+$ref{"780_6"}="PRECEDING ENTRY : Absorbed in part";
+$ref{"780_7"}="PRECEDING ENTRY : Separated from";
 $ref{"785"}="SUCCEEDING ENTRY";
+$ref{"785_0"}="SUCCEEDING ENTRY : Continued by";
+$ref{"785_1"}="SUCCEEDING ENTRY : Continued in part by";
+$ref{"785_2"}="SUCCEEDING ENTRY : Superseded by";
+$ref{"785_3"}="SUCCEEDING ENTRY : Superseded in part by";
+$ref{"785_4"}="SUCCEEDING ENTRY : Absorbed by";
+$ref{"785_5"}="SUCCEEDING ENTRY : Absorbed in part by";
+$ref{"785_6"}="SUCCEEDING ENTRY : Split into ... and ...";
+$ref{"785_7"}="SUCCEEDING ENTRY : Merged with ... to form ...";
+$ref{"785_8"}="SUCCEEDING ENTRY : Changed back to";
 $ref{"786"}="DATA SOURCE ENTRY";
 $ref{"787"}="OTHER RELATIONSHIP ENTRY";
 $ref{"856"}="ELECTRONIC LOCATION AND ACCESS";
