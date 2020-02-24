@@ -12,32 +12,37 @@
     <div id="app">
 
 
-<h3>ASSISTED FORM FOR TEXT FIELDS</h3><br/><table width=80%><tr>
-<td valign=top width=2%>
-<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
-<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>041</b-tooltip></b></font>
-</td>
-<td width=4%>
-<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
-</td>
-<td width=92%  style="height:10px;" style="vertical-align:top">
-<div  class="field is-floating-label"  ><label class="label" style="color:blue">LANGUAGE CODE</label>
-<b-input type="text"  style="min-height: 10px" rows="1" value=" $a chi $a eng $b eng" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
-</td><td><i class="fas fa-plus"></i></td>
-</tr>
+<h3>ASSISTED FORM FOR TEXT FIELDS</h3><br/>
+<H2><b>RECORD 1</b></h2>
+
+
+<table width=80%>
 <tr>
 <td valign=top width=2%>
 <b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
 <td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>082</b-tooltip></b></font>
 </td>
 <td width=4%>
-<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+<b-input type="text" maxlength="2" value="10"  id="key-title" name="keyTitle"></b-input>
 </td>
-<td width=92%  style="height:10px;" style="vertical-align:top">
+<td width=90%  style="height:10px;" style="vertical-align:top">
 <div  class="field is-floating-label"  ><label class="label" style="color:blue">DEWEY DECIMAL CLASSIFICATION NUMBER</label>
-<b-input type="text"  style="min-height: 10px" rows="1" value=" $a 616.0475 $2 23" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
-</td><td><i class="fas fa-plus"></i></td>
-</tr>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a 621 $2 13" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>210</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="1#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">ABBREVIATED TITLE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Electron. commun. Jpn., Part 1 Commun. $b (Online)" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
 <tr>
 <td valign=top width=2%>
 <b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
@@ -46,39 +51,76 @@
 <td width=4%>
 <b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
 </td>
-<td width=92%  style="height:10px;" style="vertical-align:top">
+<td width=90%  style="height:10px;" style="vertical-align:top">
 <div  class="field is-floating-label"  ><label class="label" style="color:blue">KEY TITLE</label>
-<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Shiyong xiuke zazhi $b (Zhong-yingwen ban)" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
-<b-input type="text" style="min-height: 10px"  rows="1" value=" $a 实用休克杂志 $b (中英文版)" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input>
-</td><td><i class="fas fa-plus"></i></td>
-</tr>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Electronics and communications in Japan. Part 1, Communications $b (Online)" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<font color="blue"><b>&#937;</b></font></td></tr>
 <tr>
 <td valign=top width=2%>
 <b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
 <td width=3%><font color="blue"><b><b-tooltip position="is-right" label="$a - Title (NR) $n : Number of part/section of a work (R) $p - Name of part/section of a work (R)" dashed>245</b-tooltip></b></font>
 </td>
 <td width=4%>
-<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+<b-input type="text" maxlength="2" value="1#"  id="key-title" name="keyTitle"></b-input>
 </td>
-<td width=92%  style="height:10px;" style="vertical-align:top">
+<td width=90%  style="height:10px;" style="vertical-align:top">
 <div  class="field is-floating-label"  ><label class="label" style="color:blue">TITLE STATEMENT</label>
-<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Shiyong xiuke zazhi." expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
-<b-input type="text" style="min-height: 10px"  rows="1" value=" $a 实用休克杂志." expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input>
-</td><td><i class="fas fa-plus"></i></td>
-</tr>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Electronics and communications in Japan. $n Part 1, $p Communications." expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<font color="blue"><b>&#937;</b></font></td></tr>
 <tr>
 <td valign=top width=2%>
 <b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
 <td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>246</b-tooltip></b></font>
 </td>
 <td width=4%>
-<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+<b-input type="text" maxlength="2" value="30"  id="key-title" name="keyTitle"></b-input>
 </td>
-<td width=92%  style="height:10px;" style="vertical-align:top">
+<td width=90%  style="height:10px;" style="vertical-align:top">
 <div  class="field is-floating-label"  ><label class="label" style="color:blue">VARYING FORM OF TITLE</label>
-<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Journal of practical shock" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
-</td><td><i class="fas fa-plus"></i></td>
-</tr>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Communications" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i><font color="blue"><b>&#937;</b></font></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>246</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="1#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">VARYING FORM OF TITLE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Electronics and communications in Japan. $n Part I, $p Communications" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i><font color="blue"><b>&#937;</b></font></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>246</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="3#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">VARYING FORM OF TITLE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Electronics and communications in Japan. $n Part one, $p Communications" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i><font color="blue"><b>&#937;</b></font></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>246</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="3#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">VARYING FORM OF TITLE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Electronics & communications in Japan. $n Part 1, $p Communications" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i><font color="blue"><b>&#937;</b></font></td></tr>
 <tr>
 <td valign=top width=2%>
 <b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
@@ -87,53 +129,528 @@
 <td width=4%>
 <b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
 </td>
-<td width=92%  style="height:10px;" style="vertical-align:top">
+<td width=90%  style="height:10px;" style="vertical-align:top">
 <div  class="field is-floating-label"  ><label class="label" style="color:blue">PUBLICATION, DISTRIBUTION, ETC. (IMPRINT)</label>
-<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Changsha $b Shiyong Xiuke Zazhi (Zhong-yingwen) Bianji Weiyuanhui $c 2017-" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
-<b-input type="text" style="min-height: 10px"  rows="1" value=" $a 长沙 : $b 实用休克杂志(中英文)编辑委员会, $c 2017-" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input>
-</td><td><i class="fas fa-plus"></i></td>
-</tr>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a New York $b Scripta Technica" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i><font color="blue"><b>&#937;</b></font></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>336</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">CONTENT TYPE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a text $b txt $2 rdacontent" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+</td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>337</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">MEDIA TYPE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a computer $b c $2 rdamedia" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+</td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>338</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">CARRIER TYPE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a online resource $b cr $2 rdacarrier" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+</td></tr>
 <tr>
 <td valign=top width=2%>
 <b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
 <td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>362</b-tooltip></b></font>
 </td>
 <td width=4%>
-<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+<b-input type="text" maxlength="2" value="1#"  id="key-title" name="keyTitle"></b-input>
 </td>
-<td width=92%  style="height:10px;" style="vertical-align:top">
+<td width=90%  style="height:10px;" style="vertical-align:top">
 <div  class="field is-floating-label"  ><label class="label" style="color:blue">DATES OF PUBLICATION AND/OR SEQUENTIAL DESIGNATION</label>
-<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Vol. 1, no. 1 (Oct. 2017)-" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
-</td><td><i class="fas fa-plus"></i></td>
-</tr>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Print began with vol. 68, no. 1 (Jan. 1985); ceased with v. 90, issue 12 (Dec. 2007)." expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i><font color="blue"><b>&#937;</b></font></td></tr>
 <tr>
 <td valign=top width=2%>
 <b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
-<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>720</b-tooltip></b></font>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>538</b-tooltip></b></font>
 </td>
 <td width=4%>
 <b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
 </td>
-<td width=92%  style="height:10px;" style="vertical-align:top">
-<div  class="field is-floating-label"  ><label class="label" style="color:blue">ADDED ENTRY--UNCONTROLLED NAME</label>
-<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Hu'nan Sheng Renmin Yiyuan (Hu'nan Shifan Daxue Fushu Diyi Yiyuan)" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
-<b-input type="text" style="min-height: 10px"  rows="1" value=" $a 湖南省人民医院(湖南师范大学附属第一医院)" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input>
-</td><td><i class="fas fa-plus"></i></td>
-</tr>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">SYSTEM DETAILS NOTE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Mode of access: World Wide Web." expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
 <tr>
 <td valign=top width=2%>
 <b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
-<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>720</b-tooltip></b></font>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>588</b-tooltip></b></font>
 </td>
 <td width=4%>
 <b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
 </td>
-<td width=92%  style="height:10px;" style="vertical-align:top">
-<div  class="field is-floating-label"  ><label class="label" style="color:blue">ADDED ENTRY--UNCONTROLLED NAME</label>
-<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Hunan Provincial People's Hospital (The First-Affiliated Hospital of Hunan Normal University)" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
-</td><td><i class="fas fa-plus"></i></td>
-</tr>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">SOURCE OF DESCRIPTION NOTE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Description based on: Vol. 80, issue 1 (Jan. 1997); title from contents page (viewed Apr. 25, 2000)." expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>588</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">SOURCE OF DESCRIPTION NOTE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Latest issue consulted: Vol. 90, issue 12 (Dec. 2007) (Wiley InterScience, viewed Feb. 26, 2009)." expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>710</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="2#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">ADDED ENTRY--CORPORATE NAME</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Denshi Tsūshin Gakkai." expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i><font color="blue"><b>&#937;</b></font></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>710</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="2#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">ADDED ENTRY--CORPORATE NAME</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Denshi Jōhō Tsūshin Gakkai (Japan)" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i><font color="blue"><b>&#937;</b></font></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>776</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="08"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">ADDITIONAL PHYSICAL FORM ENTRY</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $t Electronics & communications in Japan. Part 1, Communications (Print) $x 8756-6621 $h ta" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>856</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="40"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">ELECTRONIC LOCATION AND ACCESS</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $u http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1520-6424 $9 20200206" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>856</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="4#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">ELECTRONIC LOCATION AND ACCESS</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $u http://www3.interscience.wiley.com/cgi-bin/jhome/39407 $9 20200206" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
 </table>
+
+<H2><b>RECORD 2</b></h2>
+
+
+<table width=80%>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>041</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="1#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">LANGUAGE CODE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a eng" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>082</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="0#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">DEWEY DECIMAL CLASSIFICATION NUMBER</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a 621.38/05 $2 19" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>210</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="1#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">ABBREVIATED TITLE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Electron. commun. Jpn., Part 1, Commun. $b (Print)" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="$a : base of key title (NR) $b: qualifier (NR)" dashed>222</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">KEY TITLE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Electronics & communications in Japan. Part 1, Communications $b (Print)" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<font color="blue"><b>&#937;</b></font></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="$a - Title (NR) $n : Number of part/section of a work (R) $p - Name of part/section of a work (R)" dashed>245</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="1#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">TITLE STATEMENT</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Electronics & communications in Japan. $n Part 1, $p Communications." expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<font color="blue"><b>&#937;</b></font></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>246</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="30"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">VARYING FORM OF TITLE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Communications" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i><font color="blue"><b>&#937;</b></font></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>246</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="1#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">VARYING FORM OF TITLE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Electronics and communications in Japan. $n Part I, $p Communications" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i><font color="blue"><b>&#937;</b></font></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>246</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="3#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">VARYING FORM OF TITLE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Electronics & communications in Japan. $n Part one, $p Communications" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i><font color="blue"><b>&#937;</b></font></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>246</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="3#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">VARYING FORM OF TITLE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Electronics and communications in Japan. $n Part 1, $p Communications" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i><font color="blue"><b>&#937;</b></font></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>260</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">PUBLICATION, DISTRIBUTION, ETC. (IMPRINT)</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a New York $b Scripta Technica $c 1985-" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i><font color="blue"><b>&#937;</b></font></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>260</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="2#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">PUBLICATION, DISTRIBUTION, ETC. (IMPRINT)</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $3 <1988-> $a New York $b John Wiley & Sons $n 1" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i><font color="blue"><b>&#937;</b></font></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>260</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="3#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">PUBLICATION, DISTRIBUTION, ETC. (IMPRINT)</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $3 <2005-> $a Hoboken, N.J. $b Wiley Periodicals, Inc." expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i><font color="blue"><b>&#937;</b></font></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>336</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">CONTENT TYPE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a text $b txt $2 rdacontent" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+</td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>337</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">MEDIA TYPE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a unmediated $b n $2 rdamedia" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+</td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>338</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">CARRIER TYPE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a volume $b nc $2 rdacarrier" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+</td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>362</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="0#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">DATES OF PUBLICATION AND/OR SEQUENTIAL DESIGNATION</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Vol. 68, [no. 1] (Jan. 1985)-" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i><font color="blue"><b>&#937;</b></font></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>362</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="1#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">DATES OF PUBLICATION AND/OR SEQUENTIAL DESIGNATION</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Ceased with v. 90, no. 12 (Dec. 2007)." expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i><font color="blue"><b>&#937;</b></font></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>588</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">SOURCE OF DESCRIPTION NOTE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Latest issue consulted: Vol. 88, no. 12 (2005)." expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>710</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="2#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">ADDED ENTRY--CORPORATE NAME</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Denshi Tsūshin Gakkai." expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+<b-input type="text" style="min-height: 10px"  rows="1" value=" $a 電子通信学会." expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>710</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="2#"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">ADDED ENTRY--CORPORATE NAME</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Denshi Jōhō Tsūshin Gakkai (Japan)" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+<b-input type="text" style="min-height: 10px"  rows="1" value=" $a 電子情報通信学会 (Japan)" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>776</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="08"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">ADDITIONAL PHYSICAL FORM ENTRY</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $t Electronics and communications in Japan. Part 1, Communications (Online) $x 1520-6424 $h cr" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>780</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="01"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">PRECEDING ENTRY</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $t Electronics & communications in Japan $x 0424-8368" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>785</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="17"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">SUCCEEDING ENTRY</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $t Electronics & communications in Japan. Part 2, Electronics (Print) $x 8756-663X $i merged with:" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>785</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="17"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">SUCCEEDING ENTRY</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $t Electronics and communications in Japan. Part 3, Fundamental electronic science (Print) $x 1042-0967 $i merged with:" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>785</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="17"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">SUCCEEDING ENTRY</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $t Electronics and communications in Japan $x 1942-9533 $i target:" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>856</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="41"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">ELECTRONIC LOCATION AND ACCESS</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $u http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1520-6424 $9 20200206" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>856</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="41"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=90%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">ELECTRONIC LOCATION AND ACCESS</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $u http://www3.interscience.wiley.com/cgi-bin/jtoc?ID=39407 $9 20200206" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td  width=2% >
+<i class="fas fa-plus"></i></td></tr>
+</table>
+
 </div>
 </div>
 

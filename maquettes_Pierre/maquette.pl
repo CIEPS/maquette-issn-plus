@@ -222,16 +222,22 @@ print OUT "<b-input type=\"text\" maxlength=\"2\" value=\"$i1$i2\"  id=\"key-tit
 
 
 print OUT "</td>\n";
-print OUT "<td width=92\%  style=\"height:10px\;\" style=\"vertical-align:top\">\n";
+print OUT "<td width=90\%  style=\"height:10px\;\" style=\"vertical-align:top\">\n";
 
 print OUT "<div  class=\"field is-floating-label\"  ><label class=\"label\" style=\"color:blue\">$ref{$tax}</label>\n";
 print OUT "<b-input type=\"text\"  style=\"min-height: 10px\" rows=\"1\" value=\"$field\" expanded id=\"key-title\" name=\"keyTitle\" placeholder=\"\$a \$b\"></b-input></div>\n";
 if ($orifield ne "") {
 print OUT "<b-input type=\"text\" style=\"min-height: 10px\"  rows=\"1\" value=\"$orifield\" expanded id=\"key-title\" name=\"keyTitle\" placeholder=\"\$a \$b\"></b-input>\n";
 }
+print OUT "</td><td  width=2\% >\n";
+if ($tax!~/222|245|336|337|338/ ) {
+print OUT "<i class=\"fas fa-plus\"></i>";
+}
+unless ($tax=~/041|082|33.|5..|210|856|76.|77.|78./ || $orifield ne "") {
+print OUT "<font color=\"blue\"><b>&#937;</b></font>";
+}
 
-print OUT "</td><td><i class=\"fas fa-plus\"></i></td>\n";
-print OUT "</tr>\n";
+print OUT "</td></tr>\n";
 
 
 
