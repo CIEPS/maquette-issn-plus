@@ -1,6 +1,6 @@
 
 
-open (IN,@ARGV[0]);
+open (FIL,@ARGV[0]);
 
 open (OUT,">form.html");
 
@@ -31,12 +31,21 @@ my $message = <<END_MESSAGE;
 END_MESSAGE
 
 print OUT "$message\n";
+print OUT "<h3>ASSISTED FORM FOR TEXT FIELDS</h3><br/>";
 
+coucou:
+$n=0;
+$numo=0;
+read(FIL,$longueur,5);
 
-foreach $line (<IN>) {$notice=$line}
-
-
-#print "$notice";
+if ($longueur eq "") {
+goto fini;
+}
+undef(%tago);
+undef(%ori);
+$numnot++;
+read (FIL,$buf,$longueur-5);
+$notice=$longueur.$buf;
 $lengrec=length($notice);
 
 $leader=substr($notice,0,24);
@@ -68,10 +77,23 @@ $back880=$1;
 $ori{$back880}=$entrydata;
 print "BACK880 $back880\n";
 }
-
 }
 
-print OUT "<h3>ASSISTED FORM FOR TEXT FIELDS</h3><br/><table width=80\%>";
+print OUT "\n<H2><b>RECORD $numnot</b></h2>\n";
+
+print OUT "\n\n<table width=80\%>\n";
+&makeform_onerecord;
+print OUT "</table>\n";
+
+goto coucou;
+fini:
+close(FIL);
+
+&end_form;
+
+######################################################################################
+
+sub makeform_onerecord {
 
 foreach $tax (sort keys %{$tago{tags}}) {
 if ($tax> 010 && $tax<900  && $tax !~/039|022|044|510|699|035|880/) {
@@ -102,17 +124,17 @@ $field=~s/\x1f/\$/g;
 $orifield=~s/(\x1f.)/ $1 /g;
 $orifield=~s/\x1f/\$/g;
 
-#&premier;
+
 &second;
 
 }
 
 }
 }
-print OUT "</table>";
 
-
-
+}
+#############################################################################
+sub end_form {
 
 my $message2 = <<END_MESSAGE2;
 
@@ -139,8 +161,8 @@ END_MESSAGE2
 
 print OUT "$message2\n";
 
-
-
+}
+#############################################################################
 sub premier {
 #print OUT "<div class=\"columns\">\n";
 #print OUT "<div class=\"column is-full\">\n";
@@ -176,7 +198,7 @@ print OUT "</div>";
 #print OUT "<b-input value=\"$field\" label=\"$trans{$tax}\" :label-position=\"on-border\" expanded></b-input>\n";
 #print OUT "</b-field>\n";
 }
-
+####################################################################################################################
 sub second {
 &bgref;
 #print OUT "<tr style=\"background-color:$bg\;\">\n";
@@ -193,10 +215,11 @@ print OUT "</td>\n";
 
 print OUT "<td width=4\%>\n";
 
-#print OUT "<b-tooltip label=\"Indicator 1\" dashed>I1</b-tooltip>\n";
-print OUT "<b-input type=\"text\" maxlength=\"2\" value=\"\#\#\"  id=\"key-title\" name=\"keyTitle\"></b-input>\n";
-#print OUT "<b-tooltip label=\"Indicator 1\" dashed>I2</b-tooltip>\n";
-#print OUT "<b-input type=\"text\" maxlength=\"1\" value=\"\#\"  id=\"key-title\" name=\"keyTitle\"></b-input>\n";
+$i1=~s/ /\#/;
+$i2=~s/ /\#/;
+
+print OUT "<b-input type=\"text\" maxlength=\"2\" value=\"$i1$i2\"  id=\"key-title\" name=\"keyTitle\"></b-input>\n";
+
 
 print OUT "</td>\n";
 print OUT "<td width=92\%  style=\"height:10px\;\" style=\"vertical-align:top\">\n";
@@ -214,11 +237,13 @@ print OUT "</tr>\n";
 
 
 }
+
+##########################################################"
 sub bgref {
 $tip{"222"}="\$a : base of key title (NR) \$b: qualifier (NR)";
 $tip{"245"}="\$a - Title (NR) \$n : Number of part/section of a work (R) \$p - Name of part/section of a work (R)"; 
 }
-
+#########################################################
 sub reftags {
 $ref{"030"}="CODEN DESIGNATION";
 $ref{"041"}="LANGUAGE CODE";
