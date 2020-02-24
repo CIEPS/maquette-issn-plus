@@ -16644,6 +16644,10 @@ html {
 	background-color: #efefef;
 }
 
+.header-field-data, .field-data-table {
+	margin-bottom: 1rem;
+}
+
 .field-box {
 	width: 100%;
 	display: flex;
@@ -16653,6 +16657,10 @@ html {
 .field-box .field:not(:last-child) {
 	margin-right: 0.5rem;
 	margin-bottom: 0.5rem;
+}
+
+.field-tag {
+	font-weight: bold;
 }
 
 .field-preview {
@@ -16668,7 +16676,7 @@ fieldset {
 
 legend {
 	display: inline-block;
-	padding: 5px;
+	padding: 2px 5px;
 	border: 1px solid #dbdbdb;
 	border-radius: 5px;
 }
@@ -16692,9 +16700,35 @@ fieldset:not(:last-child) {
 	left: 1em;
 	font-size: 0.7rem;
 	background-color: white;
+	border-radius: 2px;
 	z-index: 5;
 }
 
 .text-fields {
 	flex-grow: 1;
+}
+
+.field-data-table .columns {
+  margin-bottom: 0.6rem;
+}
+
+.field-data-table .columns .column {
+	padding-top: 0.6rem;
+	padding-bottom: 0.4rem;
+}
+
+fieldset .content {
+	display: block;
+}
+
+fieldset.toggled .content {
+	display: none;
+}
+
+fieldset legend::after {
+	content: '-'
+}
+
+fieldset.toggled legend::after {
+	content: '+'
 }
