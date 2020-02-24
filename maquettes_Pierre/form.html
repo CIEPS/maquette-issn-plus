@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+    <div id="app">
+
+
+<h3>ASSISTED FORM FOR TEXT FIELDS</h3><br/><table width=80%><tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>041</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=92%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">LANGUAGE CODE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a chi $a eng $b eng" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td><i class="fas fa-plus"></i></td>
+</tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>082</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=92%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">DEWEY DECIMAL CLASSIFICATION NUMBER</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a 616.0475 $2 23" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td><i class="fas fa-plus"></i></td>
+</tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="$a : base of key title (NR) $b: qualifier (NR)" dashed>222</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=92%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">KEY TITLE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Shiyong xiuke zazhi $b (Zhong-yingwen ban)" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+<b-input type="text" style="min-height: 10px"  rows="1" value=" $a 实用休克杂志 $b (中英文版)" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input>
+</td><td><i class="fas fa-plus"></i></td>
+</tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="$a - Title (NR) $n : Number of part/section of a work (R) $p - Name of part/section of a work (R)" dashed>245</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=92%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">TITLE STATEMENT</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Shiyong xiuke zazhi." expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+<b-input type="text" style="min-height: 10px"  rows="1" value=" $a 实用休克杂志." expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input>
+</td><td><i class="fas fa-plus"></i></td>
+</tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>246</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=92%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">VARYING FORM OF TITLE</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Journal of practical shock" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td><i class="fas fa-plus"></i></td>
+</tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>260</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=92%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">PUBLICATION, DISTRIBUTION, ETC. (IMPRINT)</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Changsha $b Shiyong Xiuke Zazhi (Zhong-yingwen) Bianji Weiyuanhui $c 2017-" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+<b-input type="text" style="min-height: 10px"  rows="1" value=" $a 长沙 : $b 实用休克杂志(中英文)编辑委员会, $c 2017-" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input>
+</td><td><i class="fas fa-plus"></i></td>
+</tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>362</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=92%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">DATES OF PUBLICATION AND/OR SEQUENTIAL DESIGNATION</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Vol. 1, no. 1 (Oct. 2017)-" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td><i class="fas fa-plus"></i></td>
+</tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>720</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=92%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">ADDED ENTRY--UNCONTROLLED NAME</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Hu'nan Sheng Renmin Yiyuan (Hu'nan Shifan Daxue Fushu Diyi Yiyuan)" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+<b-input type="text" style="min-height: 10px"  rows="1" value=" $a 湖南省人民医院(湖南师范大学附属第一医院)" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input>
+</td><td><i class="fas fa-plus"></i></td>
+</tr>
+<tr>
+<td valign=top width=2%>
+<b-checkbox v-model="checkboxGroup" native-value="Silver"></b-checkbox></td>
+<td width=3%><font color="blue"><b><b-tooltip position="is-right" label="" dashed>720</b-tooltip></b></font>
+</td>
+<td width=4%>
+<b-input type="text" maxlength="2" value="##"  id="key-title" name="keyTitle"></b-input>
+</td>
+<td width=92%  style="height:10px;" style="vertical-align:top">
+<div  class="field is-floating-label"  ><label class="label" style="color:blue">ADDED ENTRY--UNCONTROLLED NAME</label>
+<b-input type="text"  style="min-height: 10px" rows="1" value=" $a Hunan Provincial People's Hospital (The First-Affiliated Hospital of Hunan Normal University)" expanded id="key-title" name="keyTitle" placeholder="$a $b"></b-input></div>
+</td><td><i class="fas fa-plus"></i></td>
+</tr>
+</table>
+</div>
+</div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <!-- Full bundle -->
+    <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
+
+    <!-- Individual components -->
+    <script src="https://unpkg.com/buefy/dist/components/table"></script>
+    <script src="https://unpkg.com/buefy/dist/components/input"></script>
+
+    <script>
+        new Vue({
+            el: '#app'
+        })
+    </script>
+</body>
+</html>
+
+
