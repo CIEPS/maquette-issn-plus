@@ -16644,7 +16644,7 @@ html {
 	background-color: #efefef;
 }
 
-.header-field-data, .field-data-table {
+.header-field-data {
 	margin-bottom: 1rem;
 }
 
@@ -16669,7 +16669,7 @@ html {
 
 fieldset {
 	border: 1px solid #dbdbdb;
-	padding: 0.5rem;
+	padding: 1rem 0.6rem;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -16708,7 +16708,7 @@ fieldset:not(:last-child) {
 	flex-grow: 1;
 }
 
-.field-data-table .columns {
+.field-data-table .columns:not(:last-child) {
   margin-bottom: 0.6rem;
 }
 
@@ -16717,18 +16717,14 @@ fieldset:not(:last-child) {
 	padding-bottom: 0.4rem;
 }
 
-fieldset .content {
-	display: block;
-}
-
-fieldset.toggled .content {
+fieldset.toggle.toggled .container {
 	display: none;
 }
 
-fieldset legend::after {
+fieldset.toggle legend::after {
 	content: '-'
 }
 
-fieldset.toggled legend::after {
+fieldset.toggle.toggled legend::after {
 	content: '+'
 }
