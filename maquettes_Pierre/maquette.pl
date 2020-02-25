@@ -9,6 +9,7 @@ $trans{"222"}="Key title";
 $trans{"245"}="Title Proper";
 &reftags;
 &bgref;
+&scripts;
 
 
 
@@ -79,7 +80,7 @@ print "BACK880 $back880\n";
 }
 }
 
-print OUT "\n<H2><b>RECORD $numnot</b></h2>\n";
+print OUT "\n<hr><H2><b>RECORD $numnot</b></h2>\n";
 
 print OUT "\n\n<table width=80\%>\n";
 &makeform_onerecord;
@@ -115,8 +116,14 @@ $i2=substr($field,1,1);
 $field=substr($field,2,);
 $orifield=substr($orifield,2,);
 
+
+
+$orifield=~/\x1f6[^\x1f]{7}(..)/;
+$oriscript=$1;
+
 $field=~s/\x1f6[^\x1f]*//;
-$orifield=~s/\x1f6[^\x1f]*//;
+$orifield=~s/\x1f6([^\x1f]*)//;
+
 
 $field=~s/(\x1f.)/ $1 /g;
 $field=~s/\x1f/\$/g;
@@ -233,10 +240,31 @@ print OUT "<td width=90\%  style=\"height:10px\;\" style=\"vertical-align:top\">
 print OUT "<div  class=\"field is-floating-label\"  ><label class=\"label\" style=\"color:blue\">$refer</label>\n";
 print OUT "<b-input type=\"text\"  style=\"min-height: 10px\" rows=\"1\" value=\"$field\" expanded id=\"key-title\" name=\"keyTitle\" placeholder=\"\$a \$b\"></b-input></div>\n";
 if ($orifield ne "") {
+$scriptos=$oriscript;
+
+
+#print OUT "<div class=\"select is-fullwidth\">\n";
+print OUT "<select>\n";
+
+if ($oriscript eq "(3") {$selscript ="selected"} else {$selscript=""}
+print OUT "<option value=\"\(3\"  $selscript>Arabic</option>";
+if ($oriscript eq "(B") {$selscript ="selected"} else {$selscript=""}
+print OUT "<option value=\"\(B\"  $selscript>Latin</option>";
+if ($oriscript eq "\$1") {$selscript ="selected"} else {$selscript=""}
+print OUT "<option value=\"\$1\"  $selscript>CJK</option>";
+if ($oriscript eq "(N") {$selscript ="selected"} else {$selscript=""}
+print OUT "<option value=\"\(N\"  $selscript>Cyrillic</option>";
+if ($oriscript eq "(S") {$selscript ="selected"} else {$selscript=""}
+print OUT "<option value=\"\(S\"  $selscript>Greek</option>";
+if ($oriscript eq "(2") {$selscript ="selected"} else {$selscript=""}
+print OUT "<option value=\"\(2\"  $selscript>Hebrew</option>";
+print OUT "</select>\n";
+#print OUT "</div>\n";
+
 print OUT "<b-input type=\"text\" style=\"min-height: 10px\"  rows=\"1\" value=\"$orifield\" expanded id=\"key-title\" name=\"keyTitle\" placeholder=\"\$a \$b\"></b-input>\n";
 }
 print OUT "</td><td  width=2\% >\n";
-if ($tax!~/222|245|336|337|338/ ) {
+if ($tax!~/210|222|245|336|337|338/ ) {
 print OUT "<i class=\"fas fa-plus\"></i>";
 }
 unless ($tax=~/041|082|33.|5..|210|856|76.|77.|78./ || $orifield ne "") {
@@ -325,7 +353,14 @@ $ref{"785_8"}="SUCCEEDING ENTRY : Changed back to";
 $ref{"786"}="DATA SOURCE ENTRY";
 $ref{"787"}="OTHER RELATIONSHIP ENTRY";
 $ref{"856"}="ELECTRONIC LOCATION AND ACCESS";
+}
 
-
+sub scripts {
+$script{"(3"}="Arabic";
+$script{"(B"}="Latin";
+$script{"\$1"}="Chinese, Japanese, Korean";
+$script{"(N"}="Cyrillic";
+$script{"(S"}="Greek";
+$script{"(2"}="Hebrew";
 
 }
