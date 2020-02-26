@@ -2,7 +2,7 @@
 
 open (FIL,@ARGV[0]);
 
-open (OUT,">form.html");
+open (OUT,">cataloging-text-fields-advanced-features.html");
 
 
 $trans{"222"}="Key title";
