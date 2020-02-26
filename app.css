@@ -16717,14 +16717,14 @@ fieldset:not(:last-child) {
 	padding-bottom: 0.4rem;
 }
 
-fieldset.toggle.toggled .container {
+fieldset.toggled .container {
 	display: none;
 }
 
-fieldset.toggle legend::after {
+fieldset legend::after {
 	content: '-'
 }
 
-fieldset.toggle.toggled legend::after {
+fieldset.toggled legend::after {
 	content: '+'
 }
