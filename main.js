@@ -1,3 +1,4 @@
 function toggle (element) {
-  element.classList.toggle('toggled');
+  element.parentElement.classList.toggle('toggled');
+
 }
